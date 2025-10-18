@@ -1,5 +1,5 @@
 from requests import Response
-
+from src.application.models.request.user_service_requests import CreateUserRequestModel
 from src.core.clients.api_client import ApiClient
 
 
@@ -10,5 +10,5 @@ class UserService(ApiClient):
     def get_user_by_username(self, username: str) -> Response:
         return self._get(path=f'/user/{username}')
 
-    def create_user(self, username: str) -> Response:
-        return self._get(path=f'/user/{username}')
+    def create_user(self, user: CreateUserRequestModel) -> Response:
+        return self._post(path=f'/user', json=user.model_dump())
