@@ -4,23 +4,22 @@ from src.core.driver.driver_factory import DriverFactory
 from src.core.utils.enums.Browser import Browser
 
 
-class Driver:
-    __driver: WebDriver
+class DriverManager:
+    def __init__(self, browser: Browser):
+        self.__browser: Browser = browser
+        self.__driver: WebDriver | None = None
 
-    def __init__(self):
-        raise Exception("This is singleton mothersucker")
+    def __create_driver(self):
+        if not self.__driver:
+            self.__driver = DriverFactory.create_driver(self.__browser)
 
-    @classmethod
-    def __create_driver(cls):
-        if not cls.__driver:
-            cls.__driver = DriverFactory.create_driver(Browser.CHROME)
+    @property
+    def driver(self) -> WebDriver:
+        if not self.__driver:
+            self.__create_driver()
+        return self.__driver
 
-    @classmethod
-    def get_driver(cls) -> WebDriver:
-        cls.__create_driver()
-
-    @classmethod
-    def tear_down(cls):
-        if cls.__driver:
-            cls.__driver = None
-            cls.__driver.quit()
+    def tear_down(self):
+        if self.__driver:
+            self.__driver.quit()
+            self.__driver = None
