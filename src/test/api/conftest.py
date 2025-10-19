@@ -1,8 +1,8 @@
 import pytest
-
 from src.application.api.users_service import UserService
 from src.core.clients.api_client import ApiClient
 from src.core.config.settings import TestConfig
+from src.application.utils.api_data.user_service_fixtures import *
 
 
 @pytest.fixture(scope='session', autouse=True)

@@ -13,7 +13,7 @@ class ApiClient:
         )
 
     def _post(self, path: str, json, params=None) -> Response:
-        return requests.get(
+        return requests.post(
             url=self._base_url + path,
             json=json,
             params=params

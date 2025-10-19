@@ -1,12 +1,12 @@
 from pydantic import BaseModel, Field
 
 
-class GetUserRequestModel(BaseModel):
+class CreateUserRequestModel(BaseModel):
     id: int
-    username: int
+    username: str
     firstname: str = Field(alias="firstName")
     lastname: str = Field(alias="lastName")
     email: str
     password: str
     phone: str
-    user_status: str = Field(alias="userStatus")
+    user_status: int = Field(alias="userStatus")
