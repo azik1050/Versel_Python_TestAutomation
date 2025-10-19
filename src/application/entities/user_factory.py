@@ -21,3 +21,10 @@ class UserFactory:
             phone=str(cls.faker.phone_number()),
             userStatus=random.randint(1, 5)
         )
+
+    @classmethod
+    def create_invalid_user_missing_fields(cls, field_name: str) -> dict:
+        user = cls.create_random_user().__dict__
+        user.pop(field_name)
+
+        return user

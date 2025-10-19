@@ -11,4 +11,7 @@ class UserService(ApiClient):
         return self._get(path=f'/user/{username}')
 
     def create_user(self, user: CreateUserRequestModel) -> Response:
-        return self._post(path=f'/user', json=user.model_dump())
+        if isinstance(user, CreateUserRequestModel):
+            return self._post(path=f'/user', json=user.model_dump())
+        elif isinstance(user, dict):
+            return self._post(path=f'/user', json=user)
