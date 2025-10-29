@@ -14,3 +14,10 @@ class WaitUtils:
             timeout = cls.__DEFAULT_TIMEOUT
         wait = WebDriverWait(driver=driver, timeout=timeout)
         return wait.until(EC.element_to_be_clickable(element.element))
+
+    @classmethod
+    def until_visible(cls, driver: WebDriver, element: BaseComponent, timeout=None) -> WebElement:
+        if not timeout:
+            timeout = cls.__DEFAULT_TIMEOUT
+        wait = WebDriverWait(driver=driver, timeout=timeout)
+        return wait.until(EC.visibility_of_element_located(element.locator))

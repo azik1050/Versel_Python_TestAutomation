@@ -1,5 +1,6 @@
 import pytest
 
+from src.application.data.page_factory import PageFactory
 from src.core.config.settings import TestConfig
 from src.core.driver.driver_manager import DriverManager
 from src.core.utils.enums.Browser import Browser
@@ -14,4 +15,6 @@ def driver():
 
     driver_manager.tear_down()
 
-
+@pytest.fixture(scope='session', autouse=True)
+def pages(driver):
+    return PageFactory(driver)

@@ -9,7 +9,7 @@ class DriverFactory:
     DEFAULT_AWAIT_TIME = TestConfig.IMPLICIT_DRIVER_WAIT
 
     @classmethod
-    def create_driver(cls, browser: Browser) -> WebDriver:
+    def create_driver(cls, browser: Browser) -> WebDriver | None:
         if browser == Browser.CHROME:
             return DriverFactory.create_chrome_driver()
 
