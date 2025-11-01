@@ -10,3 +10,8 @@ class CreateUserRequestModel(BaseModel):
     password: str
     phone: str
     user_status: int = Field(alias="userStatus")
+
+
+class UpdateUserRequestModel(CreateUserRequestModel):
+    pass
+
