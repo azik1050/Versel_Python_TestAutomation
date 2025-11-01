@@ -1,0 +1,1 @@
+DELETE /user/catherine38. Params : None
