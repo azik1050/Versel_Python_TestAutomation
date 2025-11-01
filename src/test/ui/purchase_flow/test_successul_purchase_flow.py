@@ -3,7 +3,7 @@ from time import sleep
 import allure
 from src.application.pages.home_page import HomePage
 from src.application.utils.enums.product_options import ProductColor, ProductSize
-from src.test.ui.conftest import driver
+from src.test.ui.conftest import driver, pages
 
 
 def test_successful_purchase(driver):

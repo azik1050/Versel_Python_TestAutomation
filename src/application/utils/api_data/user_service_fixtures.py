@@ -1,5 +1,5 @@
 import pytest
-from src.application.entities.user_factory import UserFactory
+from src.application.data.user_factory import UserFactory
 from src.application.models.response.user_service_responses import CreateUserResponse
 from src.application.utils.api_assertions import ApiAssertions
 

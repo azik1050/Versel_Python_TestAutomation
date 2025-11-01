@@ -1,8 +1,7 @@
+import pytest
 import logging
 import os
-
-import pytest
-
+from src.application.data.page_factory import PageFactory
 from src.core.config.settings import TestConfig
 from src.core.driver.driver_manager import DriverManager
 from src.core.utils.enums.Browser import Browser
@@ -16,6 +15,11 @@ def driver():
     yield driver_manager.driver
 
     driver_manager.tear_down()
+
+
+@pytest.fixture(scope='session', autouse=True)
+def pages(driver):
+    return PageFactory(driver)
 
 
 @pytest.fixture(scope="session", autouse=True)
