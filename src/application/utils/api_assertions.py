@@ -14,8 +14,9 @@ class ApiAssertions:
                 assert response.status_code == expected_code, error_message
                 logging.debug(f"Valid response for {response.url}: {response.text}")
         except AssertionError as e:
-            logging.error(f"Invalid response code, response body: {response.json()}")
-            raise AssertionError(f"Invalid response schema: {e}")
+            logging.error(f"Invalid response code: {response.status_code}. Response body: {response.text}")
+            allure.attach(response.text, name="Response body", attachment_type=allure.attachment_type.TEXT)
+            raise AssertionError(f"Invalid response code. Error message: {e}")
 
     @staticmethod
     def assert_field_value(actual_value: str | float, expected_value: str | float):
@@ -31,5 +32,6 @@ class ApiAssertions:
             with allure.step("Verify response body model"):
                 expected_model(**response.json())
         except ValidationError as e:
-            logging.error(f"Invalid response body, response body: {response.json()}. Error: {e}")
+            logging.error(f"Invalid response body, response body: {response.text}. Error: {e}")
+            allure.attach(response.text, name="Response body", attachment_type=allure.attachment_type.TEXT)
             raise AssertionError("Invalid response schema from API")

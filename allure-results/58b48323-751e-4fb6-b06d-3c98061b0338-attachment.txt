@@ -1,0 +1,6 @@
+2025-11-02 03:56:47 [35mDEBUG[0m GET /user. Params: None
+2025-11-02 03:56:47 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-02 03:56:48 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-02 03:56:48 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"3644989"}
+2025-11-02 03:56:48 [32mINFO[0m Create user by username: bradleypark
+2025-11-02 03:56:48 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"3644989"}

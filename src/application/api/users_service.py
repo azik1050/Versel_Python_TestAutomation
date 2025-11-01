@@ -1,3 +1,5 @@
+import logging
+
 from requests import Response
 from src.application.models.request.user_service_requests import CreateUserRequestModel, UpdateUserRequestModel
 from src.core.clients.api_client import ApiClient
@@ -8,17 +10,27 @@ class UserService(ApiClient):
         super().__init__(base_url)
 
     def get_user_by_username(self, username: str) -> Response:
-        return self._get(path=f'/user/{username}')
+        response = self._get(path=f'/user/{username}')
+        logging.info(f'Get user by username: {username}')
+        return response
 
     def create_user(self, user: CreateUserRequestModel) -> Response:
         if isinstance(user, CreateUserRequestModel):
-            return self._post(path=f'/user', json=user.model_dump())
+            response = self._post(path=f'/user', json=user.model_dump())
+            logging.info(f'Create user by username: {user.username}')
+            return response
         elif isinstance(user, dict):
-            return self._post(path=f'/user', json=user)
+            response = self._post(path=f'/user', json=user)
+            logging.info(f'Create user by username: {user['username']}')
+            return response
 
     def update_user(self, user: UpdateUserRequestModel) -> Response:
-        return self._put(path=f'/user/{user.username}', json=user.model_dump())
+        response = self._put(path=f'/user/{user.username}', json=user.model_dump())
+        logging.info(f'Update user by username: {user.username}')
+        return response
 
     def delete_user(self, user: UpdateUserRequestModel) -> Response:
-        return self._delete(path=f'/user/{user.username}')
+        response = self._delete(path=f'/user/{user.username}')
+        logging.info(f'Delete user by username: {user.username}')
+        return response
 

@@ -2,13 +2,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.ie.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 
-from src.test.ui.conftest import driver
 
 
 class BaseComponent:
     _locator: tuple
 
     def __init__(self, driver: WebDriver, *args):
+        from src.test.ui.conftest import driver
         self._driver = driver
         self._locator = args
 
