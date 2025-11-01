@@ -21,7 +21,8 @@ class ApiAssertions:
     @staticmethod
     def assert_field_value(actual_value: str | float, expected_value: str | float):
         try:
-            assert actual_value == expected_value, f"Actual value: {actual_value}; Expected: {expected_value}"
+            with allure.step("Verify response field value"):
+                assert actual_value == expected_value, f"Actual value: {actual_value}; Expected: {expected_value}"
         except AssertionError as e:
             logging.error(f"Invalid response value. Actual value: {actual_value}; Expected: {expected_value}")
             raise AssertionError(f"Invalid response schema: {e}")
