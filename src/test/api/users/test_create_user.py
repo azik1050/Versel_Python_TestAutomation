@@ -1,11 +1,12 @@
 import allure
 import pytest
-
+from pytest import mark
 from src.application.data.user_factory import UserFactory
 from src.application.models.response.user_service_responses import CreateUserResponse
 from src.application.utils.api_assertions import ApiAssertions
 
 
+@mark.smoke
 @allure.epic("User service")
 @allure.feature("User creation")
 @allure.story("Create user with all fields")
@@ -19,6 +20,7 @@ def test_create_user_success(user_api, random_user):
         assert body["type"] == "unknown", "Invalid response body type"
 
 
+@mark.regression
 @allure.epic("User service")
 @allure.feature("User creation")
 @allure.story("Create user with missing fields")

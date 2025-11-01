@@ -1,8 +1,10 @@
 import allure
 from src.application.models.response.user_service_responses import GetUserResponseModel, GetUserFailResponseModel
 from src.application.utils.api_assertions import ApiAssertions
+from pytest import mark
 
 
+@mark.smoke
 @allure.epic("User Service")
 @allure.feature("Get user")
 @allure.story("Get valid user")
@@ -13,6 +15,7 @@ def test_get_valid_user(user_api, created_user):
         ApiAssertions.validate_response_model(response, GetUserResponseModel)
 
 
+@mark.smoke
 @allure.epic("User Service")
 @allure.feature("Get user")
 @allure.story("Get not existing user")
