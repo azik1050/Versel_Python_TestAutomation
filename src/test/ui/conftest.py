@@ -24,7 +24,8 @@ def pages(driver):
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_logging():
-    root = os.path.dirname(os.path.abspath(__file__))
+    # root = os.path.dirname(os.path.abspath(__file__))
+    root = TestConfig.BASE_DIR
     while not os.path.exists(os.path.join(root, "pytest.ini")) and not os.path.exists(os.path.join(root, ".git")):
         parent = os.path.dirname(root)
         if parent == root:
