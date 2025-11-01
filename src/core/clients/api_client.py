@@ -11,18 +11,28 @@ class ApiClient:
         self._base_url = base_url
 
     @staticmethod
-    def request_logging():
+    def __request_logging():
         def decorator(func):
             @functools.wraps(func)
             def wrapper(*args, **kwargs):
-                logging.debug(f"GET {kwargs.get('path')}. Params: {kwargs.get('params')}")
-                response = func(*args, **kwargs)
-                logging.debug(f"Response from {kwargs.get('path')}: {response.status_code} | {response.text}")
-                return response
+                path = kwargs.get('path', None)
+                body = kwargs.get('json', None)
+                params = kwargs.get('params', None)
+
+                logging.debug(f"Request PATH: {path}. Request Body {body}. Params: {params}")
+                try:
+                    response = func(*args, **kwargs)
+                    logging.debug(f"Response from {kwargs.get('path')}: {response.status_code} | {response.text}")
+                    return response
+                except Exception as e:
+                    error = f"Request to {path} failed. Body {body}. Params: {params}. Exception: {e}"
+                    logging.error(error)
+                    allure.attach(error, name="Request payload", attachment_type=allure.attachment_type.TEXT)
+                    raise Exception(e)
             return wrapper
         return decorator
 
-    @request_logging()
+    @__request_logging()
     def _get(self, path: str, params=None) -> Response:
         allure.attach(
             f"PUT {path}. Params : {params}",
@@ -35,7 +45,7 @@ class ApiClient:
         )
         return response
 
-    @request_logging()
+    @__request_logging()
     def _post(self, path: str, json, params=None) -> Response:
         allure.attach(
             f"POST {path}. JSON: {json}. Params : {params}",
@@ -49,7 +59,7 @@ class ApiClient:
         )
         return response
 
-    @request_logging()
+    @__request_logging()
     def _put(self, path: str, json, params=None) -> Response:
         allure.attach(
             f"PUT {path}. JSON: {json}. Params : {params}",
@@ -62,7 +72,7 @@ class ApiClient:
             params=params
         )
 
-    @request_logging()
+    @__request_logging()
     def _delete(self, path: str, params=None) -> Response:
         allure.attach(
             f"DELETE {path}. Params : {params}",
