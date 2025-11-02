@@ -1,0 +1,58 @@
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.address`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.address` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.automotive`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.automotive` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.bank`.
+2025-11-03 01:59:36 DEBUG Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.barcode`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.barcode` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.color`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.color` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.company`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.company` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.credit_card` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.currency`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.currency` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.date_time`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.date_time` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.geo`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.geo` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.internet`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.internet` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.isbn`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.isbn` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.job`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.job` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.lorem`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.lorem` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.misc`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.misc` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.passport`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.passport` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.person`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.person` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.phone_number` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-03 01:59:36 DEBUG Looking for locale `en_US` in provider `faker.providers.ssn`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.ssn` has been localized to `en_US`.
+2025-11-03 01:59:36 DEBUG Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-03 01:59:36 DEBUG Request PATH: /user. Request Body {'id': 76, 'firstname': 'Drew', 'lastname': 'Church', 'email': 'hartmanrebecca@example.com', 'password': ')E$8JgV9YH', 'phone': '001-745-339-0089x1508', 'user_st2025-11-03 01:59:36 DEBUG2025-11-03 01:59:36 DEBUG Starting new HTTPS connection (1): 2025-11-03 01:59:38 DEBUG https://pe2025-11-03 01:59:38 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-03 01:59:38 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","messa2025-11-03 01:59:43 DEBUG Request PATH: /user. Request Body {'id': 822448930, 'firstname': 'Sean', 'lastname': 'Archer', 'email': 'gina41@example.net', 'password': 'bI6ySc1E)3', 'phone': '781-800-2153', 'user_status': 5}. Params: None
+2025-11-03 01:59:43 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-03 01:59:44 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-03 01:59:44 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"822448930"}
+2025-11-03 01:59:49 DEBUG Request PATH: /user. Request Body {'id': 8443, 'firstname': 'Barbara', 'lastname': 'Holmes', 'email': 'dellis@example.org', 'password': 'e930Vw^s*j', 'phone': '626-441-3968x0937', 'user_status': 3}. Params: None
+2025-11-03 01:59:49 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-03 01:59:51 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-03 01:59:51 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"8443"}
+2025-11-03 01:59:56 DEBUG Request PATH: /user. Request Body {'id': 876730926, 'firstname': 'Edwin', 'lastname': 'Willis', 'email': 'jorgenunez@example.com', 'password': '(@3OaeN7oo', 'phone': '(667)860-8365', 'user_status': 3}. Params: None
+2025-11-03 01:59:56 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-03 01:59:57 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-03 01:59:57 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"876730926"}
