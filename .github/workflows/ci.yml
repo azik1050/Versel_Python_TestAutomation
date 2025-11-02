@@ -1,10 +1,20 @@
 name: Smoke Suite
 run-name: Smoke Tests
-on: [push]
+on:
+  push:
+    branches: [main]
 
 jobs:
   initial-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Print hello
-        run: echo "Hello world!"
+      - name: setup project
+        uses: actions/checkout@v4
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+      - name: install dependecies
+        uses: pip install -r requirements.txt
+      - name: run tests
+        uses: pytest -n auto -m smoke --alluredir=allure-results
