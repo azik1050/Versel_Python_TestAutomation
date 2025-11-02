@@ -24,6 +24,11 @@ class UserService(ApiClient):
             logging.info(f'Create user by username: {user['username']}')
             return response
 
+    def create_users(self, users: list[CreateUserRequestModel]) -> Response:
+        response = self._post(path=f'/user/createWithList', json=users)
+        logging.info(f'Create users: {len(users)}')
+        return response
+
     def update_user(self, user: UpdateUserRequestModel) -> Response:
         response = self._put(path=f'/user/{user.username}', json=user.model_dump())
         logging.info(f'Update user by username: {user.username}')

@@ -9,7 +9,7 @@ class ApiAssertions:
     @staticmethod
     def assert_status_code(response: Response, expected_code: int):
         error_message = f"Actual code: {response.status_code}; Expected: {expected_code}"
-        allure.attach(response.text, name="Response body", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(response.status_code, name="Response code", attachment_type=allure.attachment_type.TEXT)
         try:
             with allure.step("Verify response code"):
                 assert response.status_code == expected_code, error_message
