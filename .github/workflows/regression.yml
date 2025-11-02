@@ -8,10 +8,7 @@ on:
 
 jobs:
   call-smoke-run:
-    runs-on: ubuntu-latest
-    steps:
-      - name: trigger smokes test run
-        uses: ./.github/workflows/smoke.yml
+    uses: ./.github/workflows/smoke.yml
 
   regression-run:
     needs: call-smoke-run
