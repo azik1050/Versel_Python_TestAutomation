@@ -19,6 +19,7 @@ jobs:
       - name: run tests
         run: pytest -n auto -m smoke --alluredir=allure-results
       - name: post allure results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
