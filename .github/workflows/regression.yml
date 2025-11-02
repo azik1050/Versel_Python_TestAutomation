@@ -1,10 +1,6 @@
 name: Regression Suite
 run-name: Regression Tests
-on:
-  merge_group:
-    branches: [main]
-  push:
-    branches: [main]
+on: [workflow_call, workflow_dispatch]
 
 jobs:
   call-smoke-run:
