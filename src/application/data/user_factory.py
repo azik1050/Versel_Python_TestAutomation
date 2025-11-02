@@ -23,8 +23,11 @@ class UserFactory:
         )
 
     @classmethod
+    def create_random_users(cls, user_count: int) -> list[CreateUserRequestModel]:
+        return [cls.create_random_user().model_dump() for _ in range(user_count)]
+
+    @classmethod
     def create_invalid_user_missing_fields(cls, field_name: str) -> dict:
         user = cls.create_random_user().__dict__
         user.pop(field_name)
-
         return user

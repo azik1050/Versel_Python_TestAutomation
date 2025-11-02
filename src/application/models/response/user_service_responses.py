@@ -9,6 +9,7 @@ class GetUserResponseModel(BaseModel):
     phone: str
     user_status: int = Field(alias="userStatus")
 
+
 class GetUserFailResponseModel(BaseModel):
     code: int
     type: str
@@ -19,3 +20,7 @@ class CreateUserResponse(BaseModel):
     code: int
     type: str
     message: str
+
+
+class CreateUsersResponse(CreateUserResponse):
+    pass
