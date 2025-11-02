@@ -15,6 +15,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: install dependecies
-        uses: pip install -r requirements.txt
+        run: pip install -r requirements.txt
       - name: run tests
-        uses: pytest -n auto -m smoke --alluredir=allure-results
+        run: pytest -n auto -m smoke --alluredir=allure-results
