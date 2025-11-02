@@ -1,0 +1,6 @@
+2025-11-02 20:27:01 [35mDEBUG[0m Request PATH: /user/Not existing user. Request Body None. Params: None
+2025-11-02 20:27:01 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-02 20:27:02 [35mDEBUG[0m https://petstore.swagger.io:443 "GET /v2/user/Not%20existing%20user HTTP/1.1" 404 None
+2025-11-02 20:27:02 [35mDEBUG[0m Response from /user/Not existing user: 404 | {"code":1,"type":"error","message":"User not found"}
+2025-11-02 20:27:02 [32mINFO[0m Get user by username: Not existing user
+2025-11-02 20:27:02 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user/Not%20existing%20user: {"code":1,"type":"error","message":"User not found"}

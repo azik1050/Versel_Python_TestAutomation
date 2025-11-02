@@ -1,0 +1,6 @@
+2025-11-02 20:27:02 [35mDEBUG[0m Request PATH: /user/createWithList. Request Body [{'id': 6557033, 'username': 'kristinamorgan', 'firstname': 'Amanda', 'lastname': 'Merritt', 'email': 'dtorres@example.com', 'password': 'l0Kg3(iv+w', 'phone': '5279175618', 'user_status': 4}]. Params: None
+2025-11-02 20:27:02 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-02 20:27:04 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user/createWithList HTTP/1.1" 200 None
+2025-11-02 20:27:04 [35mDEBUG[0m Response from /user/createWithList: 200 | {"code":200,"type":"unknown","message":"ok"}
+2025-11-02 20:27:04 [32mINFO[0m Create users: 1
+2025-11-02 20:27:04 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user/createWithList: {"code":200,"type":"unknown","message":"ok"}

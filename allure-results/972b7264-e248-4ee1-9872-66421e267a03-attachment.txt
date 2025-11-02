@@ -1,0 +1,12 @@
+2025-11-02 20:27:01 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 3201, 'username': 'katherinemitchell', 'firstname': 'Matthew', 'lastname': 'Peterson', 'email': 'susan87@example.org', 'password': 'hn^73TIj_A', 'phone': '521-772-7093x088', 'user_status': 3}. Params: None
+2025-11-02 20:27:01 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-02 20:27:02 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-02 20:27:02 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"3201"}
+2025-11-02 20:27:02 [32mINFO[0m Create user by username: katherinemitchell
+2025-11-02 20:27:02 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"3201"}
+2025-11-02 20:27:02 [35mDEBUG[0m Request PATH: /user/katherinemitchell. Request Body None. Params: None
+2025-11-02 20:27:02 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-02 20:27:04 [35mDEBUG[0m https://petstore.swagger.io:443 "DELETE /v2/user/katherinemitchell HTTP/1.1" 404 0
+2025-11-02 20:27:04 [35mDEBUG[0m Response from /user/katherinemitchell: 404 | 
+2025-11-02 20:27:04 [32mINFO[0m Delete user by username: katherinemitchell
+2025-11-02 20:27:04 [31m[1mERROR[0m Invalid response code: 404. Response body:

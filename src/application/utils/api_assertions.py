@@ -9,7 +9,7 @@ class ApiAssertions:
     @staticmethod
     def assert_status_code(response: Response, expected_code: int):
         error_message = f"Actual code: {response.status_code}; Expected: {expected_code}"
-        allure.attach(response.status_code, name="Response code", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(f'{response.status_code}', name="Response code", attachment_type=allure.attachment_type.TEXT)
         try:
             with allure.step("Verify response code"):
                 assert response.status_code == expected_code, error_message
@@ -29,10 +29,10 @@ class ApiAssertions:
 
     @staticmethod
     def validate_response_model(response: Response, expected_model: Type):
-        allure.attach(response.text, name="Response body", attachment_type=allure.attachment_type.TEXT)
+        allure.attach(f'{response.text}', name="Response body", attachment_type=allure.attachment_type.TEXT)
         try:
             with allure.step("Verify response body model"):
                 expected_model(**response.json())
         except ValidationError as e:
             logging.error(f"Invalid response body, response body: {response.text}. Error: {e}")
-            raise AssertionError("Invalid response schema from API")
+            raise AssertionError(f"Invalid response schema from API. Error: {e}")
