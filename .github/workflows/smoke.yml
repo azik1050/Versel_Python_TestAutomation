@@ -1,0 +1,28 @@
+name: Smoke Suite
+run-name: Smoke Tests
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  initial-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup project
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: install dependecies
+        run: pip install -r requirements.txt
+
+      - name: run tests
+        run: pytest -n auto -m smoke --alluredir=allure-results
+
+      - name: post allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results

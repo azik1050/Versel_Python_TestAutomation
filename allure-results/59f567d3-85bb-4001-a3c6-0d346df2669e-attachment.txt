@@ -1,0 +1,12 @@
+2025-11-03 01:59:25 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 8, 'username': 'joshua94', 'firstname': 'Gina', 'lastname': 'Jackson', 'email': 'amccall@example.net', 'password': '+A1kFzaP*I', 'phone': '+1-829-741-5051x645', 'user_status': 4}. Params: None
+2025-11-03 01:59:25 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-03 01:59:26 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-03 01:59:26 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"8"}
+2025-11-03 01:59:26 [32mINFO[0m Create user by username: joshua94
+2025-11-03 01:59:26 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"8"}
+2025-11-03 01:59:26 [35mDEBUG[0m Request PATH: /user/joshua94. Request Body None. Params: None
+2025-11-03 01:59:26 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-03 01:59:27 [35mDEBUG[0m https://petstore.swagger.io:443 "DELETE /v2/user/joshua94 HTTP/1.1" 200 None
+2025-11-03 01:59:27 [35mDEBUG[0m Response from /user/joshua94: 200 | {"code":200,"type":"unknown","message":"joshua94"}
+2025-11-03 01:59:27 [32mINFO[0m Delete user by username: joshua94
+2025-11-03 01:59:27 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user/joshua94: {"code":200,"type":"unknown","message":"joshua94"}

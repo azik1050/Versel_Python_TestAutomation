@@ -15,7 +15,7 @@ def test_get_valid_user(user_api, created_user):
         ApiAssertions.validate_response_model(response, GetUserResponseModel)
 
 
-@mark.smoke
+@mark.regression
 @allure.epic("User Service")
 @allure.feature("Get user")
 @allure.story("Get not existing user")

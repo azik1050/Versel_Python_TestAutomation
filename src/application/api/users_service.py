@@ -17,11 +17,11 @@ class UserService(ApiClient):
     def create_user(self, user: CreateUserRequestModel) -> Response:
         if isinstance(user, CreateUserRequestModel):
             response = self._post(path=f'/user', json=user.model_dump())
-            logging.info(f'Create user by username: {user.username}')
+            logging.info(f'Create user by username')
             return response
         elif isinstance(user, dict):
             response = self._post(path=f'/user', json=user)
-            logging.info(f'Create user by username: {user['username']}')
+            logging.info(f'Create user by username')
             return response
 
     def create_users(self, users: list[CreateUserRequestModel]) -> Response:

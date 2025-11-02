@@ -1,11 +1,20 @@
-name: Smoke Suite
-run-name: Smoke Tests
+name: Regression Suite
+run-name: Regression Tests
 on:
+  merge_group:
+    branches: [main]
   push:
     branches: [main]
 
 jobs:
-  initial-run:
+  call-smoke-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: trigger smokes test run
+        uses: ./.github/workflows/smoke.yml
+
+  regression-run:
+    needs: call-smoke-run
     runs-on: ubuntu-latest
     steps:
       - name: setup project
@@ -20,7 +29,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: run tests
-        run: pytest -n auto -m smoke --alluredir=allure-results
+        run: pytest -n auto -m regression --alluredir=allure-results
 
       - name: post allure results
         if: always()

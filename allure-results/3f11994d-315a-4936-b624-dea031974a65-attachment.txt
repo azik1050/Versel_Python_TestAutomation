@@ -1,0 +1,1 @@
+DELETE /user/joshua94. Params : None
