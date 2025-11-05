@@ -32,5 +32,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results
+          name: allure-regression-results
           path: allure-results
