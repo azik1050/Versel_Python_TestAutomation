@@ -6,5 +6,5 @@ class GetOrderByIdResponseModel(BaseModel):
     pet_id: int = Field(alias="petId")
     quantity: int = Field(alias="quantity")
     ship_date: str = Field(alias="shipDate")
-    status: str = Field(alias="status")
+    status: str = Field(alias="status", default=None)
     complete: bool = Field(alias="complete")
