@@ -1,0 +1,16 @@
+2025-11-05 18:54:56 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 6559649, 'username': 'townsendjessica', 'firstname': 'Jesus', 'lastname': 'Hansen', 'email': 'gonzalezmelissa@example.com', 'password': '#A3N7SqxUS', 'phone': '542.913.2992', 'user_status': 2}. Params: None
+2025-11-05 18:54:56 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:56 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"6559649"}
+2025-11-05 18:54:56 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"6559649"}
+2025-11-05 18:54:56 [35mDEBUG[0m Request PATH: /user/townsendjessica. Request Body None. Params: None
+2025-11-05 18:54:57 [35mDEBUG[0m https://petstore.swagger.io:443 "GET /v2/user/townsendjessica HTTP/1.1" 404 None
+2025-11-05 18:54:57 [35mDEBUG[0m Response from /user/townsendjessica: 404 | {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:54:57 [31m[1mERROR[0m Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:02 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 9, 'username': 'juan37', 'firstname': 'Katelyn', 'lastname': 'Barnes', 'email': 'rebeccasanchez@example.net', 'password': '!8aVj%HsIh', 'phone': '567-557-8750', 'user_status': 4}. Params: None
+2025-11-05 18:55:02 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:55:02 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"9"}
+2025-11-05 18:55:02 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"9"}
+2025-11-05 18:55:02 [35mDEBUG[0m Request PATH: /user/juan37. Request Body None. Params: None
+2025-11-05 18:55:02 [35mDEBUG[0m https://petstore.swagger.io:443 "GET /v2/user/juan37 HTTP/1.1" 404 None
+2025-11-05 18:55:02 [35mDEBUG[0m Response from /user/juan37: 404 | {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:02 [31m[1mERROR[0m Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}

@@ -1,0 +1,8 @@
+2025-11-05 18:54:40 [35mDEBUG[0m Request PATH: None. Request Body None. Params: None
+2025-11-05 18:54:40 [35mDEBUG[0m https://petstore.swagger.io:443 "GET /v2/store/order/1 HTTP/1.1" 404 None
+2025-11-05 18:54:40 [35mDEBUG[0m Response from None: 404 | {"code":1,"type":"error","message":"Order not found"}
+2025-11-05 18:54:40 [31m[1mERROR[0m Invalid response code: 404. Response body: {"code":1,"type":"error","message":"Order not found"}
+2025-11-05 18:54:45 [35mDEBUG[0m Request PATH: None. Request Body None. Params: None
+2025-11-05 18:54:45 [35mDEBUG[0m https://petstore.swagger.io:443 "GET /v2/store/order/1 HTTP/1.1" 200 None
+2025-11-05 18:54:45 [35mDEBUG[0m Response from None: 200 | {"id":1,"petId":4,"quantity":1,"shipDate":"2023-10-01T00:00:00.000+0000","status":"placed","complete":true}
+2025-11-05 18:54:45 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/store/order/1: {"id":1,"petId":4,"quantity":1,"shipDate":"2023-10-01T00:00:00.000+0000","status":"placed","complete":true}

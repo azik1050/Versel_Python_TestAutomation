@@ -1,0 +1,17 @@
+2025-11-05 18:54:38 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 7410414, 'username': 'juliawong', 'firstname': 'Daniel', 'lastname': 'Jackson', 'email': 'matthewmacdonald@example.com', 'password': '_#0nHfm5V6', 'phone': '560.641.7051x008', 'user_status': 1}. Params: None
+2025-11-05 18:54:38 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 18:54:40 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:40 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"7410414"}
+2025-11-05 18:54:40 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"7410414"}
+2025-11-05 18:54:40 [35mDEBUG[0m Request PATH: /user/juliawong. Request Body None. Params: None
+2025-11-05 18:54:40 [35mDEBUG[0m https://petstore.swagger.io:443 "DELETE /v2/user/juliawong HTTP/1.1" 404 0
+2025-11-05 18:54:40 [35mDEBUG[0m Response from /user/juliawong: 404 | 
+2025-11-05 18:54:40 [31m[1mERROR[0m Invalid response code: 404. Response body:
+2025-11-05 18:54:45 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 3776, 'username': 'brookslisa', 'firstname': 'John', 'lastname': 'Riley', 'email': 'jill39@example.org', 'password': '@19m$$GsrO', 'phone': '+1-298-768-0386x1909', 'user_status': 5}. Params: None
+2025-11-05 18:54:45 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:45 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"3776"}
+2025-11-05 18:54:45 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"3776"}
+2025-11-05 18:54:45 [35mDEBUG[0m Request PATH: /user/brookslisa. Request Body None. Params: None
+2025-11-05 18:54:45 [35mDEBUG[0m https://petstore.swagger.io:443 "DELETE /v2/user/brookslisa HTTP/1.1" 404 0
+2025-11-05 18:54:45 [35mDEBUG[0m Response from /user/brookslisa: 404 | 
+2025-11-05 18:54:45 [31m[1mERROR[0m Invalid response code: 404. Response body:

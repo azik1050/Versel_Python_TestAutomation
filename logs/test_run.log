@@ -1,85 +1,108 @@
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.address`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.address` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.automotive`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.automotive` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.bank`.
-2025-11-05 16:30:29 DEBUG Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.barcode`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.barcode` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.color`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.color` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.company`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.company` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.credit_card`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.credit_card` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.currency`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.currency` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.date_time`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.date_time` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not used for this provider.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not used for this provider.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not used for this provider.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.geo`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.geo` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.internet`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.internet` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.isbn`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.isbn` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.job`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.job` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.lorem`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.lorem` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.misc`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.misc` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.passport`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.passport` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.person`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.person` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.phone_number`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.phone_number` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not used for this provider.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not used for this provider.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not used for this provider.
-2025-11-05 16:30:29 DEBUG Looking for locale `en_US` in provider `faker.providers.ssn`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.ssn` has been localized to `en_US`.
-2025-11-05 16:30:29 DEBUG Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not used for this provider.
-2025-11-05 16:30:29 DEBUG Request PATH: /user. Request Body {'id': 0, 'username2025-11-05 16:30:29 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:30 DEBUG https://petstore.swagger.io:443 "GET /v2/store/inventory HTTP/1.1" 200 None
-2025-11-05 16:30:30 DEBUG Response from None: 200 | {"sold":45,"mollit irure":1,2025-11-05 16:30:30 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
-2025-11-05 16:30:30 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"53847724"}
-2025-11-05 16:30:30 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"53847724"}
-2025-11-05 16:30:30 DEBUG Request PATH: /user/woodvanessa. Request Body None. Params: None
-2025-11-05 16:30:30 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:31 DEBUG https://petstore.swagger.io:443 "DELETE /v2/user/woodvanessa HTTP/1.1" 404 0
-2025-11-05 16:30:31 DEBUG Response from /user/woodvanessa: 404 | 
-2025-11-05 16:30:31 ERROR Invalid response code: 404. Response body: 
-2025-11-05 16:30:37 DEBUG Request PATH: /user. Request Body {'id': 6606, 'username': 'samuelthomas', 'firstname': 'Gary', 'lastname': 'Garrison', 'email': 'milleralyssa@example.net', 'password': '^_^2Li(elO', 'phone': '(607)383-6114', 'user_status': 5}. Params: None
-2025-11-05 16:30:37 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:38 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
-2025-11-05 16:30:38 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"6606"}
-2025-11-05 16:30:38 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"6606"}
-2025-11-05 16:30:38 DEBUG Request PATH: /user/samuelthomas. Request Body None. Params: None
-2025-11-05 16:30:38 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:39 DEBUG https://petstore.swagger.io:443 "DELETE /v2/user/samuelthomas HTTP/1.1" 404 0
-2025-11-05 16:30:39 DEBUG Response from /user/samuelthomas: 404 | 
-2025-11-05 16:30:39 ERROR Invalid response code: 404. Response body: 
-2025-11-05 16:30:44 DEBUG Request PATH: /user. Request Body {'id': 46, 'username': 'middletonrichard', 'firstname': 'Angela', 'lastname': 'Benson', 'email': 'simontravis@example.net', 'password': 'teTG5lLb@m', 'phone': '+1-349-776-5530x64976', 'user_status': 1}. Params: None
-2025-11-05 16:30:44 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:45 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
-2025-11-05 16:30:45 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"46"}
-2025-11-05 16:30:45 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"46"}
-2025-11-05 16:30:45 DEBUG Request PATH: /user/middletonrichard. Request Body None. Params: None
-2025-11-05 16:30:45 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:46 DEBUG https://petstore.swagger.io:443 "DELETE /v2/user/middletonrichard HTTP/1.1" 200 None
-2025-11-05 16:30:46 DEBUG Response from /user/middletonrichard: 200 | {"code":200,"type":"unknown","message":"middletonrichard"}
-2025-11-05 16:30:46 DEBUG Valid response for https://petstore.swagger.io/v2/user/middletonrichard: {"code":200,"type":"unknown","message":"middletonrichard"}
-2025-11-05 16:30:46 DEBUG Request PATH: /user. Request Body {'id': 473210, 'username': 'kennedylaura', 'firstname': 'Robert', 'lastname': 'Holt', 'email': 'wardlauren@example.org', 'password': '&AAtz*9nD6', 'phone': '3437253540', 'user_status': 5}. Params: None
-2025-11-05 16:30:46 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:47 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
-2025-11-05 16:30:47 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"473210"}
-2025-11-05 16:30:47 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"473210"}
-2025-11-05 16:30:47 DEBUG Request PATH: /user/kennedylaura. Request Body None. Params: None
-2025-11-05 16:30:47 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
-2025-11-05 16:30:48 DEBUG https://petstore.swagger.io:443 "GET /v2/user/kennedylaura HTTP/1.1" 200 None
-2025-11-05 16:30:48 DEBUG Response from /user/kennedylaura: 200 | {"id":473210,"username":"kennedylaura","email":"wardlauren@example.org","password":"&AAtz*9nD6","phone":"3437253540","userStatus":0}
-2025-11-05 16:30:48 DEBUG Valid response for https://petstore.swagger.io/v2/user/kennedylaura: {"id":473210,"username":"kennedylaura","email":"wardlauren@example.org","password":"&AAtz*9nD6","phone":"3437253540","userStatus":0}
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.address`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.address` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.automotive`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.automotive` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.bank`.
+2025-11-05 18:54:38 DEBUG Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.barcode`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.barcode` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.color`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.color` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.company`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.company` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.credit_card` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.currency`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.currency` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.date_time`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.date_time` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.geo`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.geo` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.internet`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.internet` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.isbn`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.isbn` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.job`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.job` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.lorem`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.lorem` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.misc`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.misc` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.passport`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.passport` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.person`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.person` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.phone_number` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-05 18:54:38 DEBUG Looking for locale `en_US` in provider `faker.providers.ssn`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.ssn` has been localized to `en_US`.
+2025-11-05 18:54:38 DEBUG Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not used for this provider.
+2025-11-05 18:54:38 DEBUG Request PATH: /user. Request Body {'id': 191345805, '2025-11-05 18:54:38 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 18:54:40 DEBUG https://petstore.swagger.io:443 "GET /v2/store/inventory HTTP/1.1" 200 None
+2025-11-05 18:54:40 DEBUG Response from None: 200 | {"7000":1,"sold":73,"mollit irure":1,"50002025-11-05 18:54:40 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:40 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"191345805"}
+2025-11-05 18:54:40 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"191345805"}
+2025-11-05 18:54:40 DEBUG Request PATH: /user/createWithList. Request Body [{'id': 8162025-11-05 18:54:40 DEBUG https://petstore.swagger.io:443 "DELETE /v2/user/juliawong HTTP/1.1" 404 0
+2025-11-05 18:54:40 DEBUG Response from /user/juliawong: 404 | 
+2025-11-05 18:54:40 ERROR Invalid resp2025-11-05 18:54:40 DEBUG https:/2025-11-05 18:54:45 DEBUG Request PATH: /user. Request Body {'id': 3776, 'username': 'brookslisa', 'firstname': 'John', 'lastname': 'Riley', 'email': 'jill39@example.org', 'password': '@19m$$GsrO', 'phone': '+1-298-768-0386x1909', 'user_status': 5}. Params: None
+2025-11-05 18:54:45 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:45 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"3776"}
+2025-11-05 18:54:45 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"3776"}
+2025-11-05 18:54:45 DEBUG Request PATH: /user/brookslisa. Request Body None. Params: None
+2025-11-05 18:54:45 DEBUG https://petstore.swagger.io:443 "DELETE /v2/user/brookslisa HTTP/1.1" 404 0
+2025-11-05 18:54:45 DEBUG Response from /user/brookslisa: 404 | 
+2025-11-05 18:54:45 ERROR Invalid response code: 404. Response body: 
+2025-11-05 18:54:50 DEBUG Request PATH: /user. Request Body {'id': 5575624, 'username': 'pleonard', 'firstname': 'Amy', 'lastname': 'Curry', 'email': 'cmills@example.com', 'password': '$wgNBpBlf8', 'phone': '597-510-6806', 'user_status': 5}. Params: None
+2025-11-05 18:54:51 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:51 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"5575624"}
+2025-11-05 18:54:51 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"5575624"}
+2025-11-05 18:54:51 DEBUG Request PATH: /user/pleonard. Request Body None. Params: None
+2025-11-05 18:54:51 DEBUG https://petstore.swagger.io:443 "DELETE /v2/user/pleonard HTTP/1.1" 404 0
+2025-11-05 18:54:51 DEBUG Response from /user/pleonard: 404 | 
+2025-11-05 18:54:51 ERROR Invalid response code: 404. Response body: 
+2025-11-05 18:54:56 DEBUG Request PATH: /user. Request Body {'id': 66154431, 'username': 'johnsnyder', 'firstname': 'Jeffrey', 'lastname': 'Smith', 'email': 'jamesfuentes@example.org', 'password': '@75U4%wJ#o', 'phone': '001-839-993-8815', 'user_status': 4}. Params: None
+2025-11-05 18:54:56 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:56 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"66154431"}
+2025-11-05 18:54:56 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"66154431"}
+2025-11-05 18:54:56 DEBUG Request PATH: /user/johnsnyder. Request Body None. Params: None
+2025-11-05 18:54:56 DEBUG https://petstore.swagger.io:443 "DELETE /v2/user/johnsnyder HTTP/1.1" 404 0
+2025-11-05 18:54:56 DEBUG Response from /user/johnsnyder: 404 | 
+2025-11-05 18:54:56 ERROR Invalid response code: 404. Response body: 
+2025-11-05 18:54:56 DEBUG Request PATH: /user. Request Body {'id': 6559649, 'username': 'townsendjessica', 'firstname': 'Jesus', 'lastname': 'Hansen', 'email': 'gonzalezmelissa@example.com', 'password': '#A3N7SqxUS', 'phone': '542.913.2992', 'user_status': 2}. Params: None
+2025-11-05 18:54:56 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:54:56 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"6559649"}
+2025-11-05 18:54:56 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"6559649"}
+2025-11-05 18:54:56 DEBUG Request PATH: /user/townsendjessica. Request Body None. Params: None
+2025-11-05 18:54:57 DEBUG https://petstore.swagger.io:443 "GET /v2/user/townsendjessica HTTP/1.1" 404 None
+2025-11-05 18:54:57 DEBUG Response from /user/townsendjessica: 404 | {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:54:57 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:02 DEBUG Request PATH: /user. Request Body {'id': 9, 'username': 'juan37', 'firstname': 'Katelyn', 'lastname': 'Barnes', 'email': 'rebeccasanchez@example.net', 'password': '!8aVj%HsIh', 'phone': '567-557-8750', 'user_status': 4}. Params: None
+2025-11-05 18:55:02 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:55:02 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"9"}
+2025-11-05 18:55:02 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"9"}
+2025-11-05 18:55:02 DEBUG Request PATH: /user/juan37. Request Body None. Params: None
+2025-11-05 18:55:02 DEBUG https://petstore.swagger.io:443 "GET /v2/user/juan37 HTTP/1.1" 404 None
+2025-11-05 18:55:02 DEBUG Response from /user/juan37: 404 | {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:02 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:07 DEBUG Request PATH: /user. Request Body {'id': 250393, 'username': 'kaylacross', 'firstname': 'Warren', 'lastname': 'Green', 'email': 'megan32@example.net', 'password': 'Zo79Q9Nh_B', 'phone': '735-766-7070x746', 'user_status': 3}. Params: None
+2025-11-05 18:55:07 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:55:07 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"250393"}
+2025-11-05 18:55:07 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"250393"}
+2025-11-05 18:55:07 DEBUG Request PATH: /user/kaylacross. Request Body None. Params: None
+2025-11-05 18:55:07 DEBUG https://petstore.swagger.io:443 "GET /v2/user/kaylacross HTTP/1.1" 404 None
+2025-11-05 18:55:07 DEBUG Response from /user/kaylacross: 404 | {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:07 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:12 DEBUG Request PATH: /user. Request Body {'id': 967135, 'username': 'knoxpaul', 'firstname': 'Larry', 'lastname': 'Lynn', 'email': 'figueroajoshua@example.org', 'password': 'Q+53wMi22u', 'phone': '5828420898', 'user_status': 4}. Params: None
+2025-11-05 18:55:13 DEBUG https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 18:55:13 DEBUG Response from /user: 200 | {"code":200,"type":"unknown","message":"967135"}
+2025-11-05 18:55:13 DEBUG Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"967135"}
+2025-11-05 18:55:13 DEBUG Request PATH: /user/knoxpaul. Request Body None. Params: None
+2025-11-05 18:55:13 DEBUG https://petstore.swagger.io:443 "GET /v2/user/knoxpaul HTTP/1.1" 404 None
+2025-11-05 18:55:13 DEBUG Response from /user/knoxpaul: 404 | {"code":1,"type":"error","message":"User not found"}
+2025-11-05 18:55:13 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
