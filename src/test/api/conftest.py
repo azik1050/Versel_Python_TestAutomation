@@ -1,7 +1,8 @@
-import pytest
+from src.application.api.store_service import StoreService
 from src.application.api.users_service import UserService
 from src.core.clients.api_client import ApiClient
 from src.core.config.settings import TestConfig
+import pytest
 from src.application.utils.api_data.user_service_fixtures import *
 
 
@@ -13,3 +14,8 @@ def api_client():
 @pytest.fixture(scope='session')
 def user_api():
     return UserService(base_url=TestConfig.BASE_API_URL)
+
+
+@pytest.fixture(scope='session')
+def store_api():
+    return StoreService(base_url=TestConfig.BASE_API_URL)
