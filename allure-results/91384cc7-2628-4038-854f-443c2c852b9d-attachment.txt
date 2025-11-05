@@ -1,0 +1,10 @@
+2025-11-05 16:30:46 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 473210, 'username': 'kennedylaura', 'firstname': 'Robert', 'lastname': 'Holt', 'email': 'wardlauren@example.org', 'password': '&AAtz*9nD6', 'phone': '3437253540', 'user_status': 5}. Params: None
+2025-11-05 16:30:46 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 16:30:47 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 16:30:47 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"473210"}
+2025-11-05 16:30:47 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"473210"}
+2025-11-05 16:30:47 [35mDEBUG[0m Request PATH: /user/kennedylaura. Request Body None. Params: None
+2025-11-05 16:30:47 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 16:30:48 [35mDEBUG[0m https://petstore.swagger.io:443 "GET /v2/user/kennedylaura HTTP/1.1" 200 None
+2025-11-05 16:30:48 [35mDEBUG[0m Response from /user/kennedylaura: 200 | {"id":473210,"username":"kennedylaura","email":"wardlauren@example.org","password":"&AAtz*9nD6","phone":"3437253540","userStatus":0}
+2025-11-05 16:30:48 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user/kennedylaura: {"id":473210,"username":"kennedylaura","email":"wardlauren@example.org","password":"&AAtz*9nD6","phone":"3437253540","userStatus":0}

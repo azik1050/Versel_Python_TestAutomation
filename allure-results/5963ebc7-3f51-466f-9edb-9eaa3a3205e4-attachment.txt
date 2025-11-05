@@ -1,0 +1,1 @@
+POST /user. JSON: {'id': 1504, 'username': 'james84', 'firstname': 'Ryan', 'lastname': 'Smith', 'email': 'htaylor@example.net', 'password': '(4qt)#XgS*', 'phone': '001-722-407-1592x275', 'user_status': 4}. Params : None

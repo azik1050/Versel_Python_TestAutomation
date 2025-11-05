@@ -1,0 +1,5 @@
+2025-11-05 16:30:20 DEBUG Request PATH: None. Request Body None. Params: None
+2025-11-05 16:30:20 DEBUG Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 16:30:21 DEBUG https://petstore.swagger.io:443 "GET /v2/store/order/1 HTTP/1.1" 200 None
+2025-11-05 16:30:21 DEBUG Response from None: 200 | {"id":1,"petId":1,"quantity":1,"shipDate":"2025-11-04T09:09:58.796+0000","status":"1","complete":true}
+2025-11-05 16:30:21 DEBUG Valid response for https://petstore.swagger.io/v2/store/order/1: {"id":1,"petId":1,"quantity":1,"shipDate":"2025-11-04T09:09:58.796+0000","status":"1","complete":true}

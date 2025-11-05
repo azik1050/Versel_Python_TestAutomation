@@ -1,0 +1,5 @@
+2025-11-05 16:28:57 [35mDEBUG[0m Request PATH: None. Request Body None. Params: None
+2025-11-05 16:28:57 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 16:28:58 [35mDEBUG[0m https://petstore.swagger.io:443 "GET /v2/store/inventory HTTP/1.1" 200 None
+2025-11-05 16:28:58 [35mDEBUG[0m Response from None: 200 | {"sold":38,"доступен":1,"string":72,"panding":1,"pending":39,"available":240,"veniam":1,"SOLD":1,"hTtP://129.84.2.120/serverinclude.html?pending":1,"123":1,"Sold":1,"id pariatur":1,"invalid":2,"soldd":4,"Available":3,"НЕдоступен":1,"mignon":1,"dog":1}
+2025-11-05 16:28:58 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/store/inventory: {"sold":38,"доступен":1,"string":72,"panding":1,"pending":39,"available":240,"veniam":1,"SOLD":1,"hTtP://129.84.2.120/serverinclude.html?pending":1,"123":1,"Sold":1,"id pariatur":1,"invalid":2,"soldd":4,"Available":3,"НЕдоступен":1,"mignon":1,"dog":1}

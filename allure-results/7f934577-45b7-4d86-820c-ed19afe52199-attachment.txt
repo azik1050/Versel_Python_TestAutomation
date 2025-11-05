@@ -1,0 +1,10 @@
+2025-11-05 16:30:31 [35mDEBUG[0m Request PATH: /user. Request Body {'id': 1504, 'username': 'james84', 'firstname': 'Ryan', 'lastname': 'Smith', 'email': 'htaylor@example.net', 'password': '(4qt)#XgS*', 'phone': '001-722-407-1592x275', 'user_status': 4}. Params: None
+2025-11-05 16:30:31 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 16:30:32 [35mDEBUG[0m https://petstore.swagger.io:443 "POST /v2/user HTTP/1.1" 200 None
+2025-11-05 16:30:32 [35mDEBUG[0m Response from /user: 200 | {"code":200,"type":"unknown","message":"1504"}
+2025-11-05 16:30:32 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user: {"code":200,"type":"unknown","message":"1504"}
+2025-11-05 16:30:32 [35mDEBUG[0m Request PATH: /user/james84. Request Body {'id': 1504, 'username': 'james84', 'firstname': 'Ryan', 'lastname': 'Smith', 'email': 'htaylor@example.net', 'password': '(4qt)#XgS*', 'phone': '001-722-407-1592x275', 'user_status': 4}. Params: None
+2025-11-05 16:30:32 [35mDEBUG[0m Starting new HTTPS connection (1): petstore.swagger.io:443
+2025-11-05 16:30:33 [35mDEBUG[0m https://petstore.swagger.io:443 "PUT /v2/user/james84 HTTP/1.1" 200 None
+2025-11-05 16:30:33 [35mDEBUG[0m Response from /user/james84: 200 | {"code":200,"type":"unknown","message":"1504"}
+2025-11-05 16:30:33 [35mDEBUG[0m Valid response for https://petstore.swagger.io/v2/user/james84: {"code":200,"type":"unknown","message":"1504"}
