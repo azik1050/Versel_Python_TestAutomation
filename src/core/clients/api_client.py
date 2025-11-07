@@ -1,6 +1,5 @@
 import functools
-import logging
-
+from loguru import logger
 import allure
 import requests
 from requests import Response
@@ -18,16 +17,17 @@ class ApiClient:
             def wrapper(*args, **kwargs):
                 path = kwargs.get('path', None)
                 body = kwargs.get('json', None)
+                headers = kwargs.get('headers', None)
                 params = kwargs.get('params', None)
 
-                logging.debug(f"Request PATH: {path}. Request Body {body}. Params: {params}")
+                logger.debug(f"Request PATH: {path}. Body {body}. Header: {headers} Params: {params}")
                 try:
                     response = func(*args, **kwargs)
-                    logging.debug(f"Response from {kwargs.get('path')}: {response.status_code} | {response.text}")
+                    logger.debug(f"Response from {kwargs.get('path')}: {response.status_code} | {response.text}")
                     return response
                 except Exception as e:
                     error = f"Request to {path} failed. Body {body}. Params: {params}. Exception: {e}"
-                    logging.error(error)
+                    logger.error(error)
                     allure.attach(error, name="Request payload", attachment_type=allure.attachment_type.TEXT)
                     raise Exception(e)
             return wrapper

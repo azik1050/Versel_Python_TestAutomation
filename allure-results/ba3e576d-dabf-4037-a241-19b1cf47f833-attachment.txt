@@ -1,1 +1,0 @@
-PUT /user/dvang. JSON: {'id': 7, 'username': 'dvang', 'firstname': 'Heather', 'lastname': 'Foley', 'email': 'waltonnicole@example.net', 'password': 'VvkS5KOrK(', 'phone': '530-225-6687', 'user_status': 2}. Params : None

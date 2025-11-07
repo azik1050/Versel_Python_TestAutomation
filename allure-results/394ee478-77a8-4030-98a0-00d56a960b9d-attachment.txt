@@ -1,0 +1,2 @@
+2025-11-05T20:20:49.876485+0500 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"Order not found"}
+2025-11-05T20:20:55.246353+0500 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"Order not found"}
