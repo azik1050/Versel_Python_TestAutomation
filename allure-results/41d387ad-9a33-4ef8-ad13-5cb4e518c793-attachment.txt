@@ -1,0 +1,1 @@
+POST /user/createWithList. JSON: [{'id': 120968, 'username': 'mcclainvictor', 'firstname': 'Heather', 'lastname': 'Wu', 'email': 'odavis@example.net', 'password': '7zoS9bsI&!', 'phone': '477-236-2142x7863', 'user_status': 1}]. Params : None

@@ -1,1 +1,0 @@
-DELETE /user/alyssa16. Params : None

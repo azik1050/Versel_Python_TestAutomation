@@ -21,9 +21,9 @@ class UserService(ApiClient):
     def create_users(self, users: list[CreateUserRequestModel]) -> Response:
         return self._post(path=f'/user/createWithList', json=users)
 
-    def update_user(self, user: UpdateUserRequestModel) -> Response:
-        return self._put(path=f'/user/{user.username}', json=user.model_dump())
+    def update_user(self, username: str, user: UpdateUserRequestModel) -> Response:
+        return self._put(path=f'/user/{username}', json=user.model_dump())
 
-    def delete_user(self, user: UpdateUserRequestModel) -> Response:
-        return self._delete(path=f'/user/{user.username}')
+    def delete_user(self, username: str) -> Response:
+        return self._delete(path=f'/user/{username}')
 

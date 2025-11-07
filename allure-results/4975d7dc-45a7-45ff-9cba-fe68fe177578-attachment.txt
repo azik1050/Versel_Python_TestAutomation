@@ -1,1 +1,0 @@
-DELETE /user/egomez. Params : None

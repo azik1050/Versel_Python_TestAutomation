@@ -1,1 +1,0 @@
-DELETE /user/zacharycruz. Params : None
