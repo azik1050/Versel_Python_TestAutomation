@@ -3,6 +3,15 @@ run-name: Smoke Tests
 
 on:
   workflow_call:
+    secrets:
+      BASE_UI_URL:
+        required: true
+      BASE_API_URL:
+        required: true
+      IMPLICIT_DRIVER_WAIT:
+        required: true
+      BROWSER:
+        required: true
   workflow_dispatch:
   pull_request:
     branches: [ main ]
