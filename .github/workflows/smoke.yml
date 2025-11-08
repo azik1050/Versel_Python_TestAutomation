@@ -1,10 +1,17 @@
 name: Smoke Suite
 run-name: Smoke Tests
+
 on:
   workflow_call:
   workflow_dispatch:
   pull_request:
-    branches: [main]
+    branches: [ main ]
+
+env:
+  BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
+  BASE_API_URL: ${{ secrets.BASE_API_URL }}
+  IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
+  BROWSER: ${{ secrets.BROWSER }}
 
 jobs:
   setup-env-variables:
