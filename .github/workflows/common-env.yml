@@ -9,7 +9,8 @@ env:
   BROWSER: ${{ secrets.BROWSER }}
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Configure env
-      run: echo "Env has been configured"
+  start-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure env
+        run: echo "Env has been configured"
