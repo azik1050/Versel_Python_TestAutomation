@@ -1,0 +1,4 @@
+POST https://petstore.swagger.io/v2/user/createWithList
+Body None
+Headers: None
+Params: None

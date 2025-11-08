@@ -1,0 +1,4 @@
+2025-11-09T00:53:06.121932+0500 ERROR Request to /store/inventory failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>
+2025-11-09T00:53:11.303139+0500 ERROR Request to /store/inventory failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>
+2025-11-09T00:53:16.326977+0500 ERROR Request to /store/inventory failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>
+2025-11-09T00:53:21.353139+0500 ERROR Request to /store/inventory failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>

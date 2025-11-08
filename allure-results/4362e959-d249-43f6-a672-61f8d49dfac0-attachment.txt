@@ -1,0 +1,4 @@
+GET https://petstore.swagger.io/v2/user/cassandra62
+Body None
+Headers: None
+Params: None

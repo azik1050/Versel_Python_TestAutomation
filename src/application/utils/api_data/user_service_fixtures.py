@@ -1,3 +1,5 @@
+from time import sleep
+
 import pytest
 from src.application.data.user_factory import UserFactory
 from src.application.models.response.user_service_responses import CreateUserResponse
@@ -14,4 +16,5 @@ def created_user(user_api, random_user):
     response = user_api.create_user(random_user)
     ApiAssertions.assert_status_code(response, 200)
     ApiAssertions.validate_response_model(response, CreateUserResponse)
+    sleep(10)
     return random_user
