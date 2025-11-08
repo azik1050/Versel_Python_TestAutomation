@@ -1,9 +1,15 @@
 name: Common ENV
 
-on: [workflow_call]
+on: [ workflow_call ]
 
 env:
   BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
   BASE_API_URL: ${{ secrets.BASE_API_URL }}
   IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
   BROWSER: ${{ secrets.BROWSER }}
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Configure env
+      run: echo "Env has been configured"
