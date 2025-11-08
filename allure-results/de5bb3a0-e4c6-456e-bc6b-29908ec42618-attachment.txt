@@ -1,0 +1,4 @@
+POST https://petstore.swagger.io/v2/user
+Body {'id': 9, 'username': 'vrivera', 'firstname': 'Dillon', 'lastname': 'Moyer', 'email': 'martinezmatthew@example.net', 'password': '^9&$N5f_#9', 'phone': '001-689-380-1062x77462', 'user_status': 1}
+Headers: None
+Params: None

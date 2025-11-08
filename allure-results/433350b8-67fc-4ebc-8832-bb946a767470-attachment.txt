@@ -1,0 +1,4 @@
+GET https://petstore.swagger.io/v2/user/pvillarreal
+Body None
+Headers: None
+Params: None

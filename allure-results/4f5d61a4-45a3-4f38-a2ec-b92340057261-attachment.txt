@@ -1,0 +1,4 @@
+2025-11-09T00:53:25.962614+0500 ERROR Request to /user/christianmoore failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>
+2025-11-09T00:53:32.074184+0500 ERROR Request to /user/danieloliver failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>
+2025-11-09T00:53:38.159877+0500 ERROR Request to /user/emilypearson failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>
+2025-11-09T00:53:44.223273+0500 ERROR Request to /user/danielrodriguez failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>

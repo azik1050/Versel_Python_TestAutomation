@@ -1,0 +1,4 @@
+GET https://petstore.swagger.io/v2/user/jjarvis
+Body None
+Headers: None
+Params: None

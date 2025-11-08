@@ -1,0 +1,4 @@
+POST https://petstore.swagger.io/v2/user
+Body {'id': 4, 'username': 'jessicaortiz', 'firstname': 'Ellen', 'lastname': 'Neal', 'email': 'patriciabeard@example.org', 'password': ')Q)Z9Va8B_', 'phone': '214-598-8700x453', 'user_status': 1}
+Headers: None
+Params: None

@@ -1,0 +1,1 @@
+{"sold":10,"placed":2,"string":382,"invalid_status":1,"pending":13,"available":564,"weisskeiner1":1,"Available":2,"peric":1,"Unavailable":2,"available/pending/sold. pet status in the store (string)":2}

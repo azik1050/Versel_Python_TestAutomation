@@ -23,7 +23,7 @@ class UserFactory:
         )
 
     @classmethod
-    def create_random_users(cls, user_count: int) -> list[CreateUserRequestModel]:
+    def create_random_users(cls, user_count: int) -> list[dict]:
         return [cls.create_random_user().model_dump() for _ in range(user_count)]
 
     @classmethod

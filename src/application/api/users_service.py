@@ -1,6 +1,6 @@
-import logging
+from httpx import Response
+from pydantic import BaseModel
 
-from requests import Response
 from src.application.models.request.user_service_requests import CreateUserRequestModel, UpdateUserRequestModel
 from src.core.clients.api_client import ApiClient
 
@@ -18,7 +18,7 @@ class UserService(ApiClient):
         elif isinstance(user, dict):
             return self._post(path=f'/user', json=user)
 
-    def create_users(self, users: list[CreateUserRequestModel]) -> Response:
+    def create_users(self, users: list[dict]) -> Response:
         return self._post(path=f'/user/createWithList', json=users)
 
     def update_user(self, username: str, user: UpdateUserRequestModel) -> Response:

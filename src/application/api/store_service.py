@@ -1,4 +1,4 @@
-from requests import Response
+from httpx import Response
 from src.application.models.request.store_service_requests import CreateOrderRequestModel
 from src.core.clients.api_client import ApiClient
 
