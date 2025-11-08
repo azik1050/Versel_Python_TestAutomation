@@ -14,9 +14,6 @@ env:
   BROWSER: ${{ secrets.BROWSER }}
 
 jobs:
-  setup-env-variables:
-    uses: ./.github/workflows/common-env.yml
-
   initial-run:
     runs-on: ubuntu-latest
     steps:
