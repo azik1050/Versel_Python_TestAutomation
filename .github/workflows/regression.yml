@@ -10,6 +10,9 @@ jobs:
   call-smoke-run:
     uses: ./.github/workflows/smoke.yml
 
+  setup-env-variables:
+    uses: ./.github/workflows/common-env.yml
+
   regression-run:
     needs: call-smoke-run
     runs-on: ubuntu-latest

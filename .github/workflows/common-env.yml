@@ -1,0 +1,7 @@
+name: Common variables
+
+env:
+  BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
+  BASE_API_URL: ${{ secrets.BASE_API_URL }}
+  IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
+  BROWSER: ${{ secrets.BROWSER }}
