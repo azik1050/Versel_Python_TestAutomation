@@ -1,4 +1,6 @@
-name: Common variables
+name: Common ENV
+
+on: [workflow_call]
 
 env:
   BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
