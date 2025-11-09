@@ -9,8 +9,8 @@ from src.core.utils.enums.Browser import Browser
 
 @pytest.fixture(scope='session', autouse=True)
 def driver():
-    driver_manager = DriverManager(Browser(TestConfig.BROWSER.lower()))
-    driver_manager.driver.get(TestConfig.BASE_UI_URL)
+    driver_manager = DriverManager(Browser(TestConfig.UI.BROWSER.lower()))
+    driver_manager.driver.get(TestConfig.UI.BASE_UI_URL)
 
     yield driver_manager.driver
 
