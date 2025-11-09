@@ -12,6 +12,12 @@ on:
         required: true
       BROWSER:
         required: true
+      BASE_JIRA_API_URL:
+        required: true
+      JIRA_USER:
+        required: true
+      JIRA_PASSWORD:
+        required: true
   workflow_dispatch:
   pull_request:
     branches: [ main ]
