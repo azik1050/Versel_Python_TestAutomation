@@ -1,4 +1,0 @@
-GET https://petstore.swagger.io/v2/user/dennis59
-Body: None
-Headers: None
-Params: None

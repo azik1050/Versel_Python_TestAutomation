@@ -1,4 +1,0 @@
-POST https://petstore.swagger.io/v2/user
-Body: {'id': 88564082, 'firstname': 'Beverly', 'lastname': 'Sutton', 'email': 'andrewhunt@example.com', 'password': '+0GEt^Tqtb', 'phone': '977.277.8468x5821', 'user_status': 3}
-Headers: None
-Params: None
