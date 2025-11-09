@@ -1,0 +1,4 @@
+POST https://petstore.swagger.io/v2/user
+Body: {'id': 45, 'username': 'margaretclayton', 'firstname': 'Melissa', 'lastname': 'Jones', 'password': 'S6HxFv@p(3', 'phone': '001-206-727-2710x524', 'user_status': 4}
+Headers: None
+Params: None

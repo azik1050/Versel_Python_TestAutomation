@@ -1,0 +1,1 @@
+{"sold":16,"string":665,"invalid_status_xyz":2,"unavailable":1,"pending":9,"available":242,"available;pending;sold":1,"packing":1,"soldout":1,"0":2,"invalid_status":5,"OLdNew":1,"cat":1,"not available":1}

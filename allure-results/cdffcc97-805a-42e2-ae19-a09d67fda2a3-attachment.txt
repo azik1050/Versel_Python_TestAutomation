@@ -1,4 +1,0 @@
-DELETE https://petstore.swagger.io/v2/user/aliciadelgado
-Body None
-Headers: None
-Params: None

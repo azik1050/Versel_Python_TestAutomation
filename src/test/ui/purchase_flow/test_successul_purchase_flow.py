@@ -1,9 +1,7 @@
-from time import sleep
-
 import allure
-from src.application.pages.home_page import HomePage
-from src.application.utils.enums.product_options import ProductColor, ProductSize
-from src.test.ui.conftest import driver, pages
+from src.applications.versel.pages.home_page import HomePage
+from src.applications.versel.utils.enums.product_options import ProductColor, ProductSize
+from src.test.ui.conftest import driver
 
 
 def test_successful_purchase(driver):
