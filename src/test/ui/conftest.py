@@ -1,7 +1,7 @@
 import pytest
 import logging
 import os
-from src.application.data.page_factory import PageFactory
+from src.applications.versel.data.page_factory import PageFactory
 from src.core.config.settings import TestConfig
 from src.core.driver.driver_manager import DriverManager
 from src.core.utils.enums.Browser import Browser

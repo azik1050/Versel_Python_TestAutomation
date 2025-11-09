@@ -1,2 +1,0 @@
-2025-11-09T00:53:21.373055+0500 ERROR Request to /store/order/1 failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>
-2025-11-09T00:53:26.394109+0500 ERROR Request to /store/order/1 failed. Body None. Params: None. Exception: Provided request body type is not supported: <class 'NoneType'>

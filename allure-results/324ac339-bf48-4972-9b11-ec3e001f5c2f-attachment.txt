@@ -1,0 +1,4 @@
+GET https://petstore.swagger.io/v2/store/order/1
+Body: None
+Headers: None
+Params: None

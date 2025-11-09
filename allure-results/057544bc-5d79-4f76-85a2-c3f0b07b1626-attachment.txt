@@ -1,4 +1,0 @@
-2025-11-09T00:55:04.364988+0500 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
-2025-11-09T00:55:10.721739+0500 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
-2025-11-09T00:55:17.109848+0500 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}
-2025-11-09T00:55:23.453636+0500 ERROR Invalid response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}

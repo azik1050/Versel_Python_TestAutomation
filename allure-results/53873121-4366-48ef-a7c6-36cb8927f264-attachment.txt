@@ -1,4 +1,0 @@
-GET https://petstore.swagger.io/v2/user/rodneywilson
-Body None
-Headers: None
-Params: None

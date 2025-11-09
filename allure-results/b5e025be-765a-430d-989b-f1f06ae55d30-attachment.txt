@@ -1,0 +1,4 @@
+GET https://aymata1.atlassian.net/rest/api/3/field
+Body: None
+Headers: None
+Params: None

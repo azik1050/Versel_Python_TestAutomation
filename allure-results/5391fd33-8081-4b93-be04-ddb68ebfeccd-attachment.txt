@@ -1,0 +1,4 @@
+GET https://petstore.swagger.io/v2/user/Not existing user
+Body: None
+Headers: None
+Params: None

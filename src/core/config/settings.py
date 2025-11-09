@@ -10,3 +10,9 @@ class TestConfig:
     BASE_API_URL = os.getenv('BASE_API_URL')
     IMPLICIT_DRIVER_WAIT = int(os.getenv('IMPLICIT_DRIVER_WAIT'))
     BROWSER = os.getenv('BROWSER')
+    BASE_JIRA_API_URL = os.getenv('BASE_JIRA_API_URL')
+
+
+class JiraAuth:
+    JIRA_USER = os.getenv('JIRA_USER')
+    JIRA_PASSWORD = os.getenv('JIRA_PASSWORD')

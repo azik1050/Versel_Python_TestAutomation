@@ -1,4 +1,0 @@
-POST https://petstore.swagger.io/v2/user/createWithList
-Body [{'id': 16, 'username': 'ellisroy', 'firstname': 'Christine', 'lastname': 'Rhodes', 'email': 'laura64@example.net', 'password': '$)XC1R+uN)', 'phone': '(795)990-8469x6565', 'user_status': 4}, {'id': 38621, 'username': 'websterjoshua', 'firstname': 'Eric', 'lastname': 'Edwards', 'email': 'lindseythompson@example.com', 'password': '*)FR0O5iq9', 'phone': '777-302-5841x13893', 'user_status': 3}]
-Headers: None
-Params: None

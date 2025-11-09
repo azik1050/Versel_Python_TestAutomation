@@ -1,0 +1,4 @@
+POST https://petstore.swagger.io/v2/user
+Body: {'id': 998656180, 'username': 'gatesbrenda', 'firstname': 'Rose', 'lastname': 'Green', 'email': 'staffordmichael@example.net', 'password': '+5WBd)oKgH', 'phone': '(512)953-4497x864', 'user_status': 2}
+Headers: None
+Params: None
