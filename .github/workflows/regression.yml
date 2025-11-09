@@ -11,6 +11,9 @@ env:
   BASE_API_URL: ${{ secrets.BASE_API_URL }}
   IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
   BROWSER: ${{ secrets.BROWSER }}
+  BASE_JIRA_API_URL: ${{ secrets.BASE_JIRA_API_URL }}
+  JIRA_USER: ${{ secrets.JIRA_USER }}
+  JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
 
 jobs:
   call-smoke-run:
@@ -20,6 +23,9 @@ jobs:
       BASE_API_URL: ${{ secrets.BASE_API_URL }}
       IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
       BROWSER: ${{ secrets.BROWSER }}
+      BASE_JIRA_API_URL: ${{ secrets.BASE_JIRA_API_URL }}
+      JIRA_USER: ${{ secrets.JIRA_USER }}
+      JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
 
 
   regression-run:
