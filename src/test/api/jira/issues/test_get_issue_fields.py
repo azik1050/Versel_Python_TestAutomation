@@ -1,15 +1,18 @@
 import allure
-
+from src.applications.jira.models.response.issues_responses import GetIssuesFieldsResponseModel
 from src.applications.jira.utils.allure.enums import Epic, Feature
 from src.applications.jira.utils.api_assertions import ApiAssertions
-from src.test.api.jira.conftest import jira_api
+from src.test.api.jira.conftest import issue_service
 from pytest import mark
 
 
-@mark.smoke
 @allure.epic(Epic.ISSUES)
 @allure.feature(Feature.GET_ISSUE_FIELDS)
-@allure.story("Get list available of issue fields")
-def test_get_issue_fields(jira_api):
-    response = jira_api.get_issue_fields()
-    ApiAssertions.assert_status_code(response, 200)
+class TestCreateIssueFields:
+    @mark.smoke
+    @allure.story("Create issue fields")
+    def test_get_issue_fields(self, issue_service):
+        with allure.step('Get list available of issue fields'):
+            response = issue_service.get_issue_fields()
+            ApiAssertions.assert_status_code(response, 200)
+            ApiAssertions.validate_response_model(response, GetIssuesFieldsResponseModel)

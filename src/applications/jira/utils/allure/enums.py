@@ -7,3 +7,4 @@ class Epic:
 
 class Feature:
     GET_ISSUE_FIELDS = "Get Issue Fields"
+    CREATE_CUSTOM_ISSUE_FIELDS = "Create Issue Fields"
