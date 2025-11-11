@@ -10,24 +10,26 @@ class CustomFieldsFactory:
     @classmethod
     def create_custom_field(cls) -> CreateCustomFieldRequestModel:
         return CreateCustomFieldRequestModel(
-            # name=cls.faker.text(10),
-            # description=cls.faker.text(15),
-            name='New custom field',
-            description='Custom field for picking groups',
-            searchKey='com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher',
+            name=cls.faker.text(10),
+            description=cls.faker.text(15),
+            searcherKey='com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher',
             type='com.atlassian.jira.plugin.system.customfieldtypes:grouppicker'
         )
 
     @classmethod
-    def create_custom_field_without_properties(cls, properties: list) -> CreateCustomFieldRequestModel:
-        field = cls.create_custom_field()
-        try:
-            for property in properties:
-                field.pop(property)
-        except Exception as e:
-            raise Exception(f"Such field is not supported by API, error: {e}")
-        return field
+    def create_custom_field_with_specific_value(cls, custom_values: dict) -> dict:
+        data = cls.create_custom_field().model_dump(by_alias=True)
+
+        for key, value in custom_values.items():
+            data[key] = value
+
+        return data
 
     @classmethod
-    def create_custom_field_with_defined_properties(cls, properties: list) -> dict:
-        pass
+    def create_custom_field_without_fields(cls, excluded_fields: list[str]) -> CreateCustomFieldRequestModel:
+        data = cls.create_custom_field().model_dump(by_alias=True)
+
+        for field in excluded_fields:
+            data.pop(field)
+
+        return CreateCustomFieldRequestModel(**data)
