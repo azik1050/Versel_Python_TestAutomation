@@ -6,7 +6,7 @@ from src.core.config.settings import TestConfig
 
 
 @pytest.fixture(scope="session")
-def jira_api():
+def issue_service():
     return IssueService(
         ApiClient(
             base_url=TestConfig.API.BASE_JIRA_API_URL,
