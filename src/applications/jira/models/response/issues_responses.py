@@ -30,6 +30,14 @@ class CreateCustomFieldResponseModel(BaseModel):
     schema: dict
 
 
-class CreateCustomFailedFiledResponseModel(BaseModel):
+class ErrorResponseModel(BaseModel):
     error_messages: list = Field(alias="errorMessages")
     errors: dict
+
+
+class CreateCustomFailedFiledResponseModel(ErrorResponseModel):
+    pass
+
+
+class DeleteCustomFailedFiledResponseModel(ErrorResponseModel):
+    pass

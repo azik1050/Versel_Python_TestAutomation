@@ -20,3 +20,6 @@ class IssueService:
     def update_custom_field(self, issue_field: UpdateCustomFieldRequestModel, field_id: str) -> Response:
         return self._api.put(f'/field/{field_id}', issue_field)
 
+    def delete_custom_field(self, field_id: str) -> Response:
+        return self._api.delete(f'/field/{field_id}')
+
