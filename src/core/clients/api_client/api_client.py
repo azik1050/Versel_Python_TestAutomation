@@ -46,8 +46,8 @@ class ApiClient:
 
         response = self.__client.request(
             method=method,
-            url=f"{self.__base_url}{path}",
-            json=self.__serialize(json),
+            url=url,
+            json=body,
             headers=headers,
             params=params
         )

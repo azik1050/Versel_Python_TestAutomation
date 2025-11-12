@@ -1,33 +1,27 @@
-from faker import Faker
 from pydantic import BaseModel
-
 from src.applications.jira.models.request.issues_requests import CreateCustomFieldRequestModel
+from src.core.utils.base_api_factory import BaseJSONFactory
 
 
-class CustomFieldsFactory:
-    faker = Faker()
-
+class CustomFieldsFactory(BaseJSONFactory):
     @classmethod
     def create_custom_field(cls) -> CreateCustomFieldRequestModel:
         return CreateCustomFieldRequestModel(
-            # name=cls.faker.text(10),
-            # description=cls.faker.text(15),
-            name='New custom field',
-            description='Custom field for picking groups',
-            searchKey='com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher',
+            name=cls.faker.text(10),
+            description=cls.faker.text(15),
+            searcherKey='com.atlassian.jira.plugin.system.customfieldtypes:grouppickersearcher',
             type='com.atlassian.jira.plugin.system.customfieldtypes:grouppicker'
         )
 
     @classmethod
-    def create_custom_field_without_properties(cls, properties: list) -> CreateCustomFieldRequestModel:
-        field = cls.create_custom_field()
-        try:
-            for property in properties:
-                field.pop(property)
-        except Exception as e:
-            raise Exception(f"Such field is not supported by API, error: {e}")
-        return field
+    def create_custom_field_with_specific_value(cls, custom_values: dict) -> dict:
+        data = cls.create_custom_field().model_dump(by_alias=True)
+
+        return cls._change_json_values(data, custom_values)
 
     @classmethod
-    def create_custom_field_with_defined_properties(cls, properties: list) -> dict:
-        pass
+    def create_custom_field_without_fields(cls, excluded_fields: list[str]) -> CreateCustomFieldRequestModel:
+        data = cls.create_custom_field().model_dump(by_alias=True)
+
+        return CreateCustomFieldRequestModel(**cls._exclude_json_values(data, excluded_fields))
+

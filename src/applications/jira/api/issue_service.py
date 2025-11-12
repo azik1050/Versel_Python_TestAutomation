@@ -1,6 +1,9 @@
 from loguru import logger
 from httpx import Response
-from src.applications.jira.models.request.issues_requests import CreateCustomFieldRequestModel
+from src.applications.jira.models.request.issues_requests import (
+    CreateCustomFieldRequestModel,
+    UpdateCustomFieldRequestModel
+)
 from src.core.clients.api_client.api_client import ApiClient
 
 
@@ -13,3 +16,7 @@ class IssueService:
 
     def create_custom_field(self, issue_field: CreateCustomFieldRequestModel) -> Response:
         return self._api.post('/field', issue_field)
+
+    def update_custom_field(self, issue_field: UpdateCustomFieldRequestModel, field_id: str) -> Response:
+        return self._api.put(f'/field/{field_id}', issue_field)
+

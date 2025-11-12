@@ -1,4 +1,4 @@
-from pydantic import BaseModel, RootModel
+from pydantic import BaseModel, RootModel, Field
 
 
 class IssueFields(BaseModel):
@@ -28,3 +28,8 @@ class CreateCustomFieldResponseModel(BaseModel):
     searchable: bool
     clauseNames: list
     schema: dict
+
+
+class CreateCustomFailedFiledResponseModel(BaseModel):
+    error_messages: list = Field(alias="errorMessages")
+    errors: dict
