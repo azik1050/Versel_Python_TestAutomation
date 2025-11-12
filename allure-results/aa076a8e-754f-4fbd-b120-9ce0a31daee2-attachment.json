@@ -1,0 +1,1 @@
+{"id":"customfield_10218","key":"customfield_10218","name":"Soon send.","untranslatedName":"Soon send.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10218]","Soon send.[Group Picker (single group)]","Soon send."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10218}}

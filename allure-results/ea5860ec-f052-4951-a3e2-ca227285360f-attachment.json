@@ -1,0 +1,1 @@
+{"id":"customfield_10216","key":"customfield_10216","name":"Foot ten.","untranslatedName":"Foot ten.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Foot ten.[Group Picker (single group)]","Foot ten.","cf[10216]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10216}}

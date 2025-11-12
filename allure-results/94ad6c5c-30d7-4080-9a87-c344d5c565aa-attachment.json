@@ -1,0 +1,1 @@
+{"id":"customfield_10219","key":"customfield_10219","name":"Per.","untranslatedName":"Per.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Per.","cf[10219]","Per.[Group Picker (single group)]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10219}}

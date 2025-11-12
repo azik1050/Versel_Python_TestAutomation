@@ -1,0 +1,1 @@
+{"id":"customfield_10225","key":"customfield_10225","name":"Yes.","untranslatedName":"Yes.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10225]","Yes.[Group Picker (single group)]","Yes."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10225}}

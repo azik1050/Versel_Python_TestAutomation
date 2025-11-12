@@ -5,6 +5,7 @@ from requests import Response
 from loguru import logger
 from src.core.utils.allure import attach_api_call
 from src.core.utils.data_utils import get_json_value
+from src.core.utils.general_utils import to_json_index_str
 
 
 class ApiAssertions:
@@ -51,8 +52,8 @@ class ApiAssertions:
                 assert actual_value == value, f"Key {key} is not equal to value {value}"
 
                 allure.attach(
-                    f"{key} = {value}",
-                    name="Key | Value",
+                    f"JSON{to_json_index_str(key)} = {value}",
+                    name="Response JSON value",
                     attachment_type=allure.attachment_type.TEXT
                 )
                 logger.debug(f"Valid key | value assertion for {response.url} | {response.text}")

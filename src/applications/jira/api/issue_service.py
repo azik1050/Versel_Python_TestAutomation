@@ -23,3 +23,9 @@ class IssueService:
     def delete_custom_field(self, field_id: str) -> Response:
         return self._api.delete(f'/field/{field_id}')
 
+    def move_custom_field_to_trash(self, field_id: str) -> Response:
+        return self._api.post(f'/field/{field_id}/trash')
+
+    def restore_custom_field_from_trash(self, field_id: str) -> Response:
+        return self._api.post(f'/field/{field_id}/restore')
+
