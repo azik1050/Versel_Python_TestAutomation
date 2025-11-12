@@ -11,3 +11,10 @@ class CreateCustomFieldRequestModel(BaseModel):
         "populate_by_name": True,
         "exclude_none": True
     }
+
+
+class UpdateCustomFieldRequestModel(BaseModel):
+    description: str = Field(default=None)
+    name: str
+    searcher_key: str = Field(alias="searcherKey", default=None)
+

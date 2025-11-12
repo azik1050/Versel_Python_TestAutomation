@@ -26,7 +26,7 @@ class TestCreateCustomFields:
             ApiAssertions.validate_response_model(response, CreateCustomFieldResponseModel)
 
     @mark.regression
-    @allure.story("Receive invalid response code")
+    @allure.story("Create customer field with unknown searcherKey")
     @mark.parametrize('field', [
         CustomFieldsFactory.create_custom_field_with_specific_value({
             'searcherKey': 'invalidKey'
@@ -40,7 +40,4 @@ class TestCreateCustomFields:
             response = issue_service.create_custom_field(field)
             ApiAssertions.assert_status_code(response, 400)
             ApiAssertions.validate_response_model(response, CreateCustomFailedFiledResponseModel)
-
-        with allure.step("Validate error message"):
-            data = CreateCustomFailedFiledResponseModel(**response.json())
-            assert data.errors['searcher'] == 'Unknown searcher chosen', "Invalid Error Message"
+            ApiAssertions.assert_key_value(response, ['errors', 'searcher'], 'Unknown searcher chosen')

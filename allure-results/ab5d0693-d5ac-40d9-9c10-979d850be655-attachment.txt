@@ -1,0 +1,1 @@
+['errors', 'searcher'] = Unknown searcher chosen

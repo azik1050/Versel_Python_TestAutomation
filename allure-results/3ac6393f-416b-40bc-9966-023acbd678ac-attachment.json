@@ -1,0 +1,1 @@
+{"id":"customfield_10153","key":"customfield_10153","name":"Church.","untranslatedName":"Church.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Church.","Church.[Group Picker (single group)]","cf[10153]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10153}}

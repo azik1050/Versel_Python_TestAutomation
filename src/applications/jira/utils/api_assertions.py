@@ -3,8 +3,8 @@ import allure
 from pydantic import BaseModel, ValidationError
 from requests import Response
 from loguru import logger
-
 from src.core.utils.allure import attach_api_call
+from src.core.utils.data_utils import get_json_value
 
 
 class ApiAssertions:
@@ -41,3 +41,20 @@ class ApiAssertions:
                 logger.debug(f"Valid response model for {response.url} | {response.text}")
         except ValidationError as e:
             ApiAssertions._attach_and_raise("Invalid Response Body", response, e)
+
+    @staticmethod
+    def assert_key_value(response: Response, key: str | list, value: str):
+        try:
+            with allure.step("Assert response field value"):
+                actual_value = get_json_value(key, response)
+
+                assert actual_value == value, f"Key {key} is not equal to value {value}"
+
+                allure.attach(
+                    f"{key} = {value}",
+                    name="Key | Value",
+                    attachment_type=allure.attachment_type.TEXT
+                )
+                logger.debug(f"Valid key | value assertion for {response.url} | {response.text}")
+        except Exception as e:
+            ApiAssertions._attach_and_raise("Field Value Mismatch", response, e)

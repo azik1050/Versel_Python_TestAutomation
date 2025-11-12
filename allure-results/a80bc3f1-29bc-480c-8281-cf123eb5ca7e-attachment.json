@@ -1,0 +1,1 @@
+{"id":"customfield_10154","key":"customfield_10154","name":"College.","untranslatedName":"College.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["College.","College.[Group Picker (single group)]","cf[10154]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10154}}
