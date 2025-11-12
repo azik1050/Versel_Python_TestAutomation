@@ -9,5 +9,5 @@ def custom_issue_field(issue_service) -> CreateCustomFieldResponseModel:
     response = issue_service.create_custom_field(CustomFieldsFactory.create_custom_field())
     ApiAssertions.assert_status_code(response, 201)
     ApiAssertions.validate_response_model(response, CreateCustomFieldResponseModel)
-    return response
+    return CreateCustomFieldResponseModel(**response.json())
 

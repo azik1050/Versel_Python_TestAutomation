@@ -1,5 +1,4 @@
 import allure
-
 from src.applications.jira.data.custom_fields_factory import CustomFieldsFactory
 from src.applications.jira.models.response.issues_responses import CreateCustomFieldResponseModel, CreateCustomFailedFiledResponseModel
 from src.applications.jira.utils.allure.enums import Epic, Feature

@@ -60,5 +60,5 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: smoke-logs
-          path: logs
+          name: logs
+          path: smoke-logs
