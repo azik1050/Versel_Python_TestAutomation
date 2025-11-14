@@ -1,0 +1,1 @@
+{"id":"customfield_10328","key":"customfield_10328","name":"Reality.","untranslatedName":"Reality.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Reality.[Group Picker (single group)]","cf[10328]","Reality."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10328}}

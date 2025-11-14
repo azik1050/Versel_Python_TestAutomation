@@ -1,0 +1,1 @@
+{"id":"customfield_10326","key":"customfield_10326","name":"First.","untranslatedName":"First.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["First.[Group Picker (single group)]","cf[10326]","First."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10326}}

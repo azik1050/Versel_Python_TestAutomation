@@ -1,0 +1,1 @@
+{"id":"customfield_10325","key":"customfield_10325","name":"Author.","untranslatedName":"Author.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Author.","cf[10325]","Author.[Group Picker (single group)]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10325}}

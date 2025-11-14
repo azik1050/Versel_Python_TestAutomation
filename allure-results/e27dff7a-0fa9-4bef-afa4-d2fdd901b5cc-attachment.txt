@@ -1,0 +1,1 @@
+2025-11-14T12:19:49.529143+0500 ERROR Invalid Response Code. Response code: 404. Response body: {"code":1,"type":"error","message":"User not found"}

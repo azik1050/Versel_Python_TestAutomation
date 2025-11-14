@@ -1,0 +1,1 @@
+{"id":"customfield_10323","key":"customfield_10323","name":"Book such.","untranslatedName":"Book such.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Book such.[Group Picker (single group)]","Book such.","cf[10323]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10323}}

@@ -1,0 +1,1 @@
+{"id":"customfield_10331","key":"customfield_10331","name":"Before.","untranslatedName":"Before.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10331]","Before.[Group Picker (single group)]","Before."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10331}}

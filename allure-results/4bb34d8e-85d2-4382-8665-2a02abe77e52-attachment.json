@@ -1,0 +1,1 @@
+{"id":"customfield_10330","key":"customfield_10330","name":"Future.","untranslatedName":"Future.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Future.[Group Picker (single group)]","cf[10330]","Future."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10330}}

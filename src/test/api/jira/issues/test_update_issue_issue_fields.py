@@ -1,19 +1,15 @@
 import string
-
 import allure
-
 from src.applications.jira.models.request.issues_requests import UpdateCustomFieldRequestModel
-from src.applications.jira.models.response.issues_responses import CreateCustomFieldResponseModel, \
-    CreateCustomFailedFiledResponseModel
 from src.applications.jira.utils.allure.enums import Epic, Feature
-from src.applications.jira.utils.api_assertions import ApiAssertions
+from src.test.api.base_test import BaseTest
 from src.test.api.jira.conftest import issue_service
 from pytest import mark
 
 
 @allure.epic(Epic.ISSUES)
 @allure.feature(Feature.UPDATE_CUSTOM_ISSUE_FIELDS)
-class TestUpdateCustomFields:
+class TestUpdateCustomFields(BaseTest):
     @mark.regression
     @allure.story("Update 'description' field")
     @mark.parametrize('description_field', [
@@ -32,7 +28,7 @@ class TestUpdateCustomFields:
                 ),
                 custom_issue_field.id
             )
-            ApiAssertions.assert_status_code(response, 204)
+            self.assert_status_code(response, 204)
 
     @mark.regression
     @allure.story("Update 'name' field")
@@ -52,4 +48,4 @@ class TestUpdateCustomFields:
                 ),
                 custom_issue_field.id
             )
-            ApiAssertions.assert_status_code(response, 204)
+            self.assert_status_code(response, 204)

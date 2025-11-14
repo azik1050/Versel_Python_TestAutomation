@@ -1,0 +1,1 @@
+{"id":"customfield_10324","key":"customfield_10324","name":"Cover.","untranslatedName":"Cover.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10324]","Cover.[Group Picker (single group)]","Cover."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10324}}
