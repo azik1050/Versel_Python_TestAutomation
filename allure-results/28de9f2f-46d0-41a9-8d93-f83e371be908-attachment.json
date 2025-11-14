@@ -1,1 +1,0 @@
-{"id":"customfield_10224","key":"customfield_10224","name":"Consider.","untranslatedName":"Consider.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Consider.[Group Picker (single group)]","Consider.","cf[10224]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10224}}

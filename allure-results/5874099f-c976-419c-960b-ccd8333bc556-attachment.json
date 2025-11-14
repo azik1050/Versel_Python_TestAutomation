@@ -1,0 +1,1 @@
+{"id":"customfield_10280","key":"customfield_10280","name":"Condition.","untranslatedName":"Condition.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10280]","Condition.","Condition.[Group Picker (single group)]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10280}}

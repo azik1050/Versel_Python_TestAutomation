@@ -1,1 +1,0 @@
-Response JSON[errors][searcher] = Unknown searcher chosen

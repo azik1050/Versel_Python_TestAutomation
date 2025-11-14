@@ -1,0 +1,1 @@
+{"id":"customfield_10287","key":"customfield_10287","name":"Let small.","untranslatedName":"Let small.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10287]","Let small.","Let small.[Group Picker (single group)]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10287}}

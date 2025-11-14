@@ -1,1 +1,0 @@
-{"id":"customfield_10221","key":"customfield_10221","name":"Always.","untranslatedName":"Always.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Always.[Group Picker (single group)]","cf[10221]","Always."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10221}}

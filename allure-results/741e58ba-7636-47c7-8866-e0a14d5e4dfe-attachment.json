@@ -1,0 +1,1 @@
+{"id":"customfield_10284","key":"customfield_10284","name":"Identify.","untranslatedName":"Identify.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Identify.[Group Picker (single group)]","cf[10284]","Identify."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10284}}

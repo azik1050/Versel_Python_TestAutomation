@@ -1,0 +1,1 @@
+{"id":"customfield_10286","key":"customfield_10286","name":"Clearly.","untranslatedName":"Clearly.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Clearly.[Group Picker (single group)]","Clearly.","cf[10286]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10286}}

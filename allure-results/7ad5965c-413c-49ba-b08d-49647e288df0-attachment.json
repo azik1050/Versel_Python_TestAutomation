@@ -1,1 +1,0 @@
-{"id":"customfield_10215","key":"customfield_10215","name":"Recently.","untranslatedName":"Recently.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10215]","Recently.[Group Picker (single group)]","Recently."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10215}}

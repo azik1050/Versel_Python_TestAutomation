@@ -1,1 +1,0 @@
-{"id":"customfield_10223","key":"customfield_10223","name":"Knowledge.","untranslatedName":"Knowledge.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Knowledge.[Group Picker (single group)]","Knowledge.","cf[10223]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10223}}

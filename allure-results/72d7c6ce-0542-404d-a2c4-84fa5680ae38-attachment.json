@@ -1,1 +1,0 @@
-{"id":"customfield_10220","key":"customfield_10220","name":"Visit.","untranslatedName":"Visit.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Visit.[Group Picker (single group)]","Visit.","cf[10220]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10220}}

@@ -1,0 +1,1 @@
+JSON[errorMessages][0] = Field id has to be prefixed with 'customfield_'

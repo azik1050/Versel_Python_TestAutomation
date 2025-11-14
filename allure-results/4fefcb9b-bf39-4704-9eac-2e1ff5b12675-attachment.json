@@ -1,0 +1,1 @@
+{"id":"customfield_10282","key":"customfield_10282","name":"Work.","untranslatedName":"Work.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Work.[Group Picker (single group)]","cf[10282]","Work."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10282}}
