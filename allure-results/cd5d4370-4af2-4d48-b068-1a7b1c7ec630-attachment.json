@@ -1,0 +1,1 @@
+{"id":"customfield_10374","key":"customfield_10374","name":"Nearly.","untranslatedName":"Nearly.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Nearly.[Group Picker (single group)]","Nearly.","cf[10374]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10374}}

@@ -1,0 +1,1 @@
+{"id":"customfield_10370","key":"customfield_10370","name":"Whole.","untranslatedName":"Whole.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Whole.[Group Picker (single group)]","Whole.","cf[10370]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10370}}

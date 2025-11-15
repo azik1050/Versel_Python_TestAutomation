@@ -1,11 +1,7 @@
-import functools
 from types import NoneType
 from loguru import logger
-import allure
 from httpx import Client, Response, Auth
 from pydantic import BaseModel
-
-from src.core.utils.allure import attach_api_call
 
 
 class ApiClient:
@@ -61,11 +57,17 @@ class ApiClient:
         return self._request(path=path, method="GET", **kwargs)
 
 
-    def post(self, path: str, json: dict | BaseModel | type[BaseModel] | list[dict], **kwargs) -> Response:
+    def post(
+            self, path: str, json: dict | BaseModel | type[BaseModel] | list[dict] | None = None,
+            **kwargs
+    ) -> Response:
         return self._request(path=path, method="POST", json=json, **kwargs)
 
 
-    def put(self, path: str, json: dict | BaseModel | list[BaseModel], **kwargs) -> Response:
+    def put(
+            self, path: str, json: dict | BaseModel | type[BaseModel] | list[dict] | None = None,
+            **kwargs
+    ) -> Response:
         return self._request(path=path, method="PUT", json=json, **kwargs)
 
 

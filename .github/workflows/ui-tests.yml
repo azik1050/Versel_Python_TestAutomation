@@ -1,0 +1,47 @@
+name: UI Suite
+run-name: UI Tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      TEST_TYPE:
+        description: Type of tests that must be run. "api" or "ui"
+        required: true
+        type: string
+        default: 'ui'
+
+env:
+  TEST_TYPE: ${{ github.event.inputs.TEST_TYPE || vars.TEST_TYPE}}
+
+jobs:
+  initial-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup project
+        uses: actions/checkout@v4
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: install dependencies
+        run: pip install -r requirements.txt
+
+      - name: run tests
+        run: pytest -n auto -m ${{ env.TEST_TYPE }} --alluredir=allure-results
+
+      - name: post allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-ui-results
+          path: allure-results
+
+      - name: post application logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-logs
+          path: logs

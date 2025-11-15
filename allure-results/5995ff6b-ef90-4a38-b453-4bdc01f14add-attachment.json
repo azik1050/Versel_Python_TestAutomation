@@ -1,0 +1,1 @@
+{"id":"customfield_10377","key":"customfield_10377","name":"Like.","untranslatedName":"Like.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10377]","Like.[Group Picker (single group)]","Like."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10377}}

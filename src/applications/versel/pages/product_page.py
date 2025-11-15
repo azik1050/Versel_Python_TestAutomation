@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.ie.webdriver import WebDriver
 from src.applications.versel.pages.base_page import BasePage
@@ -15,20 +16,24 @@ class ProductPage(BasePage):
         super().__init__(driver)
 
 
+    @allure.step('Select product color: {color}')
     def select_color(self, color: ProductColor):
         self.selected_color = Button(self._driver,By.XPATH, f"//button[normalize-space(text())='{color.value}']")
         self.selected_color.click()
         return self
 
+    @allure.step('Select product size: {size}')
     def select_size(self, size: ProductSize):
         self.selected_size = Button(self._driver,By.XPATH, f"//button[normalize-space(text())='{size.value}']")
         self.selected_size.click()
         return self
 
+    @allure.step('Add product to cart')
     def click_add_to_cart_button(self):
         self.__add_to_cart_button.click()
         return self
 
+    @allure.step('Confirm checkout')
     def click_checkout_button(self):
         self.__proceed_to_checkout_button.click()
 

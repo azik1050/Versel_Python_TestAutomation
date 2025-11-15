@@ -1,0 +1,1 @@
+{"id":"customfield_10378","key":"customfield_10378","name":"Operation.","untranslatedName":"Operation.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Operation.[Group Picker (single group)]","Operation.","cf[10378]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10378}}

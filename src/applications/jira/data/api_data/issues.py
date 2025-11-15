@@ -11,3 +11,9 @@ def custom_issue_field(issue_service) -> CreateCustomFieldResponseModel:
     ApiAssertions.validate_response_model(response, CreateCustomFieldResponseModel)
     return CreateCustomFieldResponseModel(**response.json())
 
+
+@pytest.fixture(scope='function')
+def deleted_custom_field(issue_service, custom_issue_field) -> CreateCustomFieldResponseModel:
+    response = issue_service.move_custom_field_to_trash(custom_issue_field.id)
+    ApiAssertions.assert_status_code(response, 200)
+    return custom_issue_field

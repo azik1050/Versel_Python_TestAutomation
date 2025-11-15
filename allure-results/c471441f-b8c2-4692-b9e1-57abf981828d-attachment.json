@@ -1,0 +1,1 @@
+{"id":"customfield_10379","key":"customfield_10379","name":"Right.","untranslatedName":"Right.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Right.[Group Picker (single group)]","cf[10379]","Right."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10379}}

@@ -1,0 +1,1 @@
+{"id":"customfield_10375","key":"customfield_10375","name":"Usually.","untranslatedName":"Usually.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Usually.[Group Picker (single group)]","cf[10375]","Usually."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10375}}

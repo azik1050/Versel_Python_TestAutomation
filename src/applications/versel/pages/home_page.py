@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.ie.webdriver import WebDriver
 from src.applications.versel.pages.base_page import BasePage
@@ -10,6 +11,7 @@ class HomePage(BasePage):
         super().__init__(driver)
         self._main_section_product = BaseComponent(driver, By.XPATH, "//main/section[1]/div[1]")
 
+    @allure.step('Click main section product')
     def click_main_section_product(self) -> ProductPage:
         self._main_section_product.click()
         return ProductPage(self._driver)

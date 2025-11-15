@@ -1,19 +1,15 @@
 import string
-
 import allure
-
 from src.applications.jira.models.request.issues_requests import UpdateCustomFieldRequestModel
-from src.applications.jira.models.response.issues_responses import CreateCustomFieldResponseModel, \
-    CreateCustomFailedFiledResponseModel
 from src.applications.jira.utils.allure.enums import Epic, Feature
-from src.applications.jira.utils.api_assertions import ApiAssertions
+from src.test.api.base_test import BaseTest
 from src.test.api.jira.conftest import issue_service
 from pytest import mark
 
 
 @allure.epic(Epic.ISSUES)
 @allure.feature(Feature.UPDATE_CUSTOM_ISSUE_FIELDS)
-class TestUpdateCustomFields:
+class TestUpdateCustomFields(BaseTest):
     @mark.regression
     @allure.story("Update 'description' field")
     @mark.parametrize('description_field', [
@@ -23,7 +19,7 @@ class TestUpdateCustomFields:
         '!@#$%^&*()/*-+'
     ])
     def test_update_customer_issue_description_field(self, issue_service, custom_issue_field, description_field):
-        with allure.step(f'Update issue description to: {description_field}'):
+        with self.step(f'Update issue description to: {description_field}'):
             response = issue_service.update_custom_field(
                 UpdateCustomFieldRequestModel(
                     description=description_field,
@@ -32,7 +28,7 @@ class TestUpdateCustomFields:
                 ),
                 custom_issue_field.id
             )
-            ApiAssertions.assert_status_code(response, 204)
+            self.assert_status_code(response, 204)
 
     @mark.regression
     @allure.story("Update 'name' field")
@@ -43,7 +39,7 @@ class TestUpdateCustomFields:
         '!@#$%^&*()/*-+'
     ])
     def test_update_customer_issue_name_field(self, issue_service, custom_issue_field, name_field):
-        with allure.step(f'Update issue description to: {name_field}'):
+        with self.step(f'Update issue description to: {name_field}'):
             response = issue_service.update_custom_field(
                 UpdateCustomFieldRequestModel(
                     description='Some sort of description',
@@ -52,4 +48,4 @@ class TestUpdateCustomFields:
                 ),
                 custom_issue_field.id
             )
-            ApiAssertions.assert_status_code(response, 204)
+            self.assert_status_code(response, 204)
