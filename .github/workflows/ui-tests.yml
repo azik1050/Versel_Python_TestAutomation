@@ -13,6 +13,13 @@ on:
 
 env:
   TEST_TYPE: ${{ github.event.inputs.TEST_TYPE || vars.TEST_TYPE}}
+  BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
+  BASE_API_URL: ${{ secrets.BASE_API_URL }}
+  IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
+  BROWSER: ${{ secrets.BROWSER }}
+  BASE_JIRA_API_URL: ${{ secrets.BASE_JIRA_API_URL }}
+  JIRA_USER: ${{ secrets.JIRA_USER }}
+  JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
 
 jobs:
   initial-run:
