@@ -13,7 +13,7 @@ class TestGetUser(BaseTest):
     @mark.smoke
     @allure.story("Get valid user")
     def test_get_valid_user(self, user_api, created_user):
-        with allure.step("Validation of successful GET /user/{username}"):
+        with self.step("Validation of successful GET /user/{username}"):
             response = user_api.get_user_by_username(created_user.username)
             self.assert_status_code(response, 200)
             self.validate_response_model(response, GetUserResponseModel)
@@ -22,7 +22,7 @@ class TestGetUser(BaseTest):
     @mark.regression
     @allure.story("Get not existing user")
     def test_get_invalid_user(self, user_api):
-        with allure.step("Validation of failed GET /user/{username}"):
+        with self.step("Validation of failed GET /user/{username}"):
             response = user_api.get_user_by_username("Not existing user")
             self.assert_status_code(response, 404)
             self.validate_response_model(response, GetUserFailResponseModel)

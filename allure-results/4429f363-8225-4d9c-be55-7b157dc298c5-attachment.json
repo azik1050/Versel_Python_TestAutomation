@@ -1,1 +1,0 @@
-{"id":"customfield_10334","key":"customfield_10334","name":"Why human.","untranslatedName":"Why human.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Why human.[Group Picker (single group)]","Why human.","cf[10334]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10334}}

@@ -1,0 +1,1 @@
+{"id":"customfield_10376","key":"customfield_10376","name":"Seek what.","untranslatedName":"Seek what.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Seek what.[Group Picker (single group)]","cf[10376]","Seek what."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10376}}

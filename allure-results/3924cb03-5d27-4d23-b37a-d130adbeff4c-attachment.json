@@ -1,0 +1,1 @@
+{"id":"customfield_10368","key":"customfield_10368","name":"Eight.","untranslatedName":"Eight.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10368]","Eight.","Eight.[Group Picker (single group)]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10368}}

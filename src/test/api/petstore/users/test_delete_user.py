@@ -12,14 +12,14 @@ class TestDeleteUser(BaseTest):
     @mark.smoke
     @allure.story("Delete valid user")
     def test_delete_user(self, created_user, user_api):
-        with allure.step("Delete user"):
+        with self.step("Delete user"):
             response = user_api.delete_user(created_user.username)
             self.assert_status_code(response, 200)
 
     @mark.regression
     @allure.story("Delete not existing user")
     def test_delete_not_existing_user(self, user_api):
-        with allure.step("Delete not existing user"):
+        with self.step("Delete not existing user"):
             response = user_api.delete_user('Noname')
             self.assert_status_code(response, 404)
 

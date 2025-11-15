@@ -1,1 +1,0 @@
-{"id":"customfield_10329","key":"customfield_10329","name":"Fast.","untranslatedName":"Fast.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Fast.[Group Picker (single group)]","cf[10329]","Fast."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10329}}

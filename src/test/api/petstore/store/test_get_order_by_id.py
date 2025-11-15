@@ -13,6 +13,7 @@ class TestGetOrderById(BaseTest):
     @allure.story("Get Order")
     @mark.smoke
     def test_get_order_by_id(self, store_api):
-        response = store_api.get_order_by_id(1)
-        self.assert_status_code(response, 200)
-        self.validate_response_model(response, GetOrderByIdResponseModel)
+        with self.step("Get order by id"):
+            response = store_api.get_order_by_id(1)
+            self.assert_status_code(response, 200)
+            self.validate_response_model(response, GetOrderByIdResponseModel)

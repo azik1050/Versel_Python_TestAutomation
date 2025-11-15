@@ -1,1 +1,0 @@
-{"id":"customfield_10333","key":"customfield_10333","name":"Wonder.","untranslatedName":"Wonder.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Wonder.[Group Picker (single group)]","cf[10333]","Wonder."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10333}}

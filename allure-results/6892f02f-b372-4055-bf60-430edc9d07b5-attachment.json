@@ -1,1 +1,0 @@
-{"id":"customfield_10281","key":"customfield_10281","name":"Modern.","untranslatedName":"Modern.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Modern.","Modern.[Group Picker (single group)]","cf[10281]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10281}}

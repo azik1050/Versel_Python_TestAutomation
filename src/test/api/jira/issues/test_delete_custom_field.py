@@ -13,14 +13,14 @@ class TestDeleteCustomFields(BaseTest):
     @mark.regression
     @allure.story("Delete issue field")
     def test_delete_custom_issue_field(self, issue_service, custom_issue_field):
-        with allure.step(f'Delete issue field, ID: {custom_issue_field.id}'):
+        with self.step(f'Delete issue field, ID: {custom_issue_field.id}'):
             response = issue_service.delete_custom_field(custom_issue_field.id)
             self.assert_status_code(response, 303)
 
     @mark.regression
     @allure.story("Delete not existing custom issue field")
-    def test_delete_not_existing_custom_issue_field(self, issue_service,):
-        with allure.step(f'Delete not existing field'):
+    def test_delete_not_existing_custom_issue_field(self, issue_service):
+        with self.step(f'Delete not existing field'):
             response = issue_service.delete_custom_field('customfield_1')
             self.assert_status_code(response, 404)
             self.validate_response_model(response, DeleteCustomFailedFiledResponseModel)
@@ -28,8 +28,8 @@ class TestDeleteCustomFields(BaseTest):
 
     @mark.regression
     @allure.story("Delete custom issue field with invalid prefix")
-    def test_delete_custom_issue_field_with_invalid_prefix(self, issue_service,):
-        with allure.step(f'Delete field with invalid prefix'):
+    def test_delete_custom_issue_field_with_invalid_prefix(self, issue_service):
+        with self.step(f'Delete field with invalid prefix'):
             response = issue_service.delete_custom_field('invalid_prefix')
             self.assert_status_code(response, 400)
             self.validate_response_model(response, DeleteCustomFailedFiledResponseModel)

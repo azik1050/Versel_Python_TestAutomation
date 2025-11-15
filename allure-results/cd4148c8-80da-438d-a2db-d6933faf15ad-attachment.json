@@ -1,0 +1,1 @@
+{"id":"customfield_10367","key":"customfield_10367","name":"Popular.","untranslatedName":"Popular.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Popular.[Group Picker (single group)]","Popular.","cf[10367]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10367}}

@@ -19,7 +19,7 @@ class TestCreateCustomFields(BaseTest):
         })
     ])
     def test_create_valid_custom_issue_fields(self, issue_service, field):
-        with allure.step('Get list available of issue fields'):
+        with self.step('Get list available of issue fields'):
             response = issue_service.create_custom_field(field)
             self.assert_status_code(response, 201)
             self.validate_response_model(response, CreateCustomFieldResponseModel)
@@ -35,7 +35,7 @@ class TestCreateCustomFields(BaseTest):
         })
     ])
     def test_create_custom_field_with_invalid_searcher_ley(self, issue_service, field):
-        with allure.step(f'Create issue with invalid "searcherKey": {field['searcherKey']}'):
+        with self.step(f'Create issue with invalid "searcherKey": {field['searcherKey']}'):
             response = issue_service.create_custom_field(field)
             self.assert_status_code(response, 400)
             self.validate_response_model(response, CreateCustomFailedFiledResponseModel)

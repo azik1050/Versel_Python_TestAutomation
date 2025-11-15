@@ -14,7 +14,7 @@ class TestCreateUsers(BaseTest):
     @allure.story("Create several users")
     @mark.parametrize('users_count', [1, 2, 10])
     def test_create_users(self, user_api, users_count):
-        with allure.step(f'Create users. Number of users: {users_count}'):
+        with self.step(f'Create users. Number of users: {users_count}'):
             users = UserFactory.create_random_users(users_count)
             response = user_api.create_users(users)
             self.assert_status_code(response, 200)

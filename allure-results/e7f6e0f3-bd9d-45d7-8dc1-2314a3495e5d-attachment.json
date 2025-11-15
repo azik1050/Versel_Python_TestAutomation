@@ -1,1 +1,0 @@
-{"id":"customfield_10279","key":"customfield_10279","name":"Building.","untranslatedName":"Building.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Building.","Building.[Group Picker (single group)]","cf[10279]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10279}}

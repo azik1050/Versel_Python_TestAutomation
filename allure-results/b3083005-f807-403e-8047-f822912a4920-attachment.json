@@ -1,1 +1,0 @@
-{"id":"customfield_10278","key":"customfield_10278","name":"Right TV.","untranslatedName":"Right TV.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Right TV.[Group Picker (single group)]","cf[10278]","Right TV."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10278}}

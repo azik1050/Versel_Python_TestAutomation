@@ -1,11 +1,7 @@
-import functools
 from types import NoneType
 from loguru import logger
-import allure
 from httpx import Client, Response, Auth
 from pydantic import BaseModel
-
-from src.core.utils.allure import attach_api_call
 
 
 class ApiClient:

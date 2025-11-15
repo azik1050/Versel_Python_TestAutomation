@@ -1,0 +1,1 @@
+{"id":"customfield_10373","key":"customfield_10373","name":"Later.","untranslatedName":"Later.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Later.[Group Picker (single group)]","cf[10373]","Later."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10373}}

@@ -13,7 +13,7 @@ class TestCreateIssueFields(BaseTest):
     @mark.smoke
     @allure.story("Create issue fields")
     def test_get_issue_fields(self, issue_service):
-        with allure.step('Get list available of issue fields'):
+        with self.step('Get list of available issue fields'):
             response = issue_service.get_issue_fields()
             self.assert_status_code(response, 200)
             self.validate_response_model(response, GetIssuesFieldsResponseModel)

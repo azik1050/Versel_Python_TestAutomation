@@ -1,0 +1,1 @@
+{"id":"customfield_10372","key":"customfield_10372","name":"Capital.","untranslatedName":"Capital.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Capital.[Group Picker (single group)]","cf[10372]","Capital."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10372}}

@@ -1,1 +1,0 @@
-{"id":"customfield_10322","key":"customfield_10322","name":"Occur.","untranslatedName":"Occur.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Occur.[Group Picker (single group)]","cf[10322]","Occur."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10322}}

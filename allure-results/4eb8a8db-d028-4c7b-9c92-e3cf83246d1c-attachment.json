@@ -1,1 +1,0 @@
-{"id":"customfield_10283","key":"customfield_10283","name":"Listen.","untranslatedName":"Listen.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Listen.[Group Picker (single group)]","cf[10283]","Listen."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10283}}

@@ -14,7 +14,7 @@ class TestMoveCustomFieldToTrash(BaseTest):
     @mark.regression
     @allure.story("Move custom field to trash")
     def test_move_to_trash(self, issue_service, custom_issue_field):
-        with allure.step(f'Move field to trash, ID: {custom_issue_field.id}'):
+        with self.step(f'Move field to trash, ID: {custom_issue_field.id}'):
             response = issue_service.move_custom_field_to_trash(custom_issue_field.id)
             self.assert_status_code(response, 200)
 

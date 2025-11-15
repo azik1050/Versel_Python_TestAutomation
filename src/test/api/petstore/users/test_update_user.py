@@ -11,7 +11,7 @@ class TestUpdateUser(BaseTest):
     @mark.smoke
     @allure.story("Update valid user")
     def test_update_user(self, created_user, user_api):
-        with allure.step("Update user"):
+        with self.step("Update user"):
             response = user_api.update_user(created_user.username, created_user)
             self.assert_status_code(response, 200)
 

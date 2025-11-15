@@ -19,7 +19,7 @@ class TestUpdateCustomFields(BaseTest):
         '!@#$%^&*()/*-+'
     ])
     def test_update_customer_issue_description_field(self, issue_service, custom_issue_field, description_field):
-        with allure.step(f'Update issue description to: {description_field}'):
+        with self.step(f'Update issue description to: {description_field}'):
             response = issue_service.update_custom_field(
                 UpdateCustomFieldRequestModel(
                     description=description_field,
@@ -39,7 +39,7 @@ class TestUpdateCustomFields(BaseTest):
         '!@#$%^&*()/*-+'
     ])
     def test_update_customer_issue_name_field(self, issue_service, custom_issue_field, name_field):
-        with allure.step(f'Update issue description to: {name_field}'):
+        with self.step(f'Update issue description to: {name_field}'):
             response = issue_service.update_custom_field(
                 UpdateCustomFieldRequestModel(
                     description='Some sort of description',

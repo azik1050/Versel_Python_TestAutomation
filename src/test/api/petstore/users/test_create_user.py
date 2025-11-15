@@ -13,7 +13,7 @@ class TestCreateUser(BaseTest):
     @mark.smoke
     @allure.story("Create user with all fields")
     def test_create_user_success(self, user_api, random_user):
-        with allure.step("Create a valid random user POST /user"):
+        with self.step("Create a valid random user POST /user"):
             response = user_api.create_user(user=random_user)
             self.assert_status_code(response, 200)
             self.validate_response_model(response, CreateUserResponse)
@@ -28,7 +28,7 @@ class TestCreateUser(BaseTest):
         'email'
     ])
     def test_create_user_without_field_success(self, user_api, field_name):
-        with allure.step("Create a valid random user without field POST /user"):
+        with self.step("Create a valid random user without field POST /user"):
             response = user_api.create_user(user=UserFactory.create_invalid_user_missing_fields(field_name))
             self.assert_status_code(response, 200)
             self.validate_response_model(response, CreateUserResponse)

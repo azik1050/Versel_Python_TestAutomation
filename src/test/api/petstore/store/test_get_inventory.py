@@ -11,7 +11,7 @@ class TestGetInventory(BaseTest):
     @allure.story("Get inventory")
     @mark.smoke
     def test_get_inventory(self, store_api):
-        with allure.step("Get Inventory"):
+        with self.step("Get Inventory"):
             response = store_api.get_inventory()
             self.assert_status_code(response, 200)
 

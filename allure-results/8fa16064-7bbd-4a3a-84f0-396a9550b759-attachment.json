@@ -1,1 +1,0 @@
-{"id":"customfield_10327","key":"customfield_10327","name":"Democrat.","untranslatedName":"Democrat.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["Democrat.","Democrat.[Group Picker (single group)]","cf[10327]"],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10327}}

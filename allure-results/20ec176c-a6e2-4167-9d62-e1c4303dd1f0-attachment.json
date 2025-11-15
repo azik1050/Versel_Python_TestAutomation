@@ -1,1 +1,0 @@
-{"id":"customfield_10288","key":"customfield_10288","name":"Letter.","untranslatedName":"Letter.","custom":true,"orderable":true,"navigable":true,"searchable":true,"clauseNames":["cf[10288]","Letter.[Group Picker (single group)]","Letter."],"schema":{"type":"group","custom":"com.atlassian.jira.plugin.system.customfieldtypes:grouppicker","customId":10288}}

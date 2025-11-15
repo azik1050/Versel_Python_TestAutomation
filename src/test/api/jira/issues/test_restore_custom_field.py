@@ -14,7 +14,7 @@ class TestRestoreCustomFields(BaseTest):
     @mark.regression
     @allure.story("Restore issue field")
     def test_restore_custom_issue_field(self, issue_service, deleted_custom_field):
-        with allure.step(f'Restore issue field, ID: {deleted_custom_field.id}'):
+        with self.step(f'Restore issue field, ID: {deleted_custom_field.id}'):
             response = issue_service.restore_custom_field_from_trash(deleted_custom_field.id)
             self.assert_status_code(response, 200)
 
