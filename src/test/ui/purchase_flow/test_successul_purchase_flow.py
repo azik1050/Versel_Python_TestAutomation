@@ -1,17 +1,14 @@
 import allure
 from src.applications.versel.pages.home_page import HomePage
 from src.applications.versel.utils.enums.product_options import ProductColor, ProductSize
+from pytest import mark
 from src.test.ui.conftest import driver
 
 
+@mark.ui
 def test_successful_purchase(driver):
-    with allure.step("Navigate to product page"):
-        product_page = HomePage(driver).click_main_section_product()
-    with allure.step("Choose color"):
-        product_page.select_color(ProductColor.BLACK)
-    with allure.step("Choose size"):
-        product_page.select_size(ProductSize.XS)
-    with allure.step("Proceed"):
-        product_page.click_add_to_cart_button()
-    with allure.step("Choose amount"):
-        product_page.click_stupid_button().click_checkout_button()
+    product_page = HomePage(driver).click_main_section_product()
+    product_page.select_color(ProductColor.BLACK)
+    product_page.select_size(ProductSize.XS)
+    product_page.click_add_to_cart_button()
+    product_page.click_stupid_button().click_checkout_button()
