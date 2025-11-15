@@ -9,10 +9,10 @@ on:
         description: Type of tests that must be run. "api" or "ui"
         required: true
         type: string
-        default: ${{ vars.TEST_TYPE }}
+        default: 'ui'
 
 env:
-  TEST_TYPE: ${{ github.event.inputs.TEST_TYPE }}
+  TEST_TYPE: ${{ github.event.inputs.TEST_TYPE || vars.TEST_TYPE}}
 
 jobs:
   initial-run:
