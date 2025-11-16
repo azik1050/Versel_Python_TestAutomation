@@ -45,7 +45,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: run API tests
-        continue-on-fail: true
+        continue-on-error: true
         run: pytest src/test/api/${{ matrix.application }}  -n auto -m smoke --alluredir=allure-results
 
       - name: post allure results
