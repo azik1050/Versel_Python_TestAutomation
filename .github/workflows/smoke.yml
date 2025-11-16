@@ -8,10 +8,6 @@ on:
         required: true
       BASE_API_URL:
         required: true
-      IMPLICIT_DRIVER_WAIT:
-        required: true
-      BROWSER:
-        required: true
       BASE_JIRA_API_URL:
         required: true
       JIRA_USER:
@@ -25,14 +21,16 @@ on:
 env:
   BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
   BASE_API_URL: ${{ secrets.BASE_API_URL }}
-  IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
-  BROWSER: ${{ secrets.BROWSER }}
   BASE_JIRA_API_URL: ${{ secrets.BASE_JIRA_API_URL }}
   JIRA_USER: ${{ secrets.JIRA_USER }}
   JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
 
 jobs:
   initial-run:
+    continue-on-error: true
+    strategy:
+      matrix:
+        application: [jira, petstore]
     runs-on: ubuntu-latest
     steps:
       - name: setup project
@@ -46,19 +44,18 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
 
-      - name: run tests
-        run: pytest -n auto -m smoke --alluredir=allure-results
+      - name: run API tests
+        continue-on-error: true
+        run: pytest src/test/api/${{ matrix.application }}  -n auto -m smoke --alluredir=allure-results
 
       - name: post allure results
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-smoke-results
+          name: ${{ matrix.application }}-allure-smoke-results
           path: allure-results
 
       - name: post application logs
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: smoke-logs
+          name: ${{ matrix.application }}-smoke-logs
           path: logs

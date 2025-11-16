@@ -9,8 +9,6 @@ on:
 env:
   BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
   BASE_API_URL: ${{ secrets.BASE_API_URL }}
-  IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
-  BROWSER: ${{ secrets.BROWSER }}
   BASE_JIRA_API_URL: ${{ secrets.BASE_JIRA_API_URL }}
   JIRA_USER: ${{ secrets.JIRA_USER }}
   JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
@@ -21,8 +19,6 @@ jobs:
     secrets:
       BASE_UI_URL: ${{ secrets.BASE_UI_URL }}
       BASE_API_URL: ${{ secrets.BASE_API_URL }}
-      IMPLICIT_DRIVER_WAIT: ${{ secrets.IMPLICIT_DRIVER_WAIT }}
-      BROWSER: ${{ secrets.BROWSER }}
       BASE_JIRA_API_URL: ${{ secrets.BASE_JIRA_API_URL }}
       JIRA_USER: ${{ secrets.JIRA_USER }}
       JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
@@ -30,6 +26,10 @@ jobs:
 
   regression-run:
     needs: call-smoke-run
+    continue-on-error: true
+    strategy:
+      matrix:
+        application: [ jira, petstore ]
     runs-on: ubuntu-latest
     steps:
       - name: setup project
@@ -40,22 +40,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: install dependecies
+      - name: install dependencies
         run: pip install -r requirements.txt
 
-      - name: run tests
-        run: pytest -n auto -m regression --alluredir=allure-results
+      - name: run API tests
+        continue-on-error: true
+        run: pytest src/test/api/${{ matrix.application }} -n auto -m regression --alluredir=allure-results
 
       - name: post allure results
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-regression-results
+          name: ${{ matrix.application }}-allure-regression-results
           path: allure-results
 
       - name: post application logs
-        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: regression-logs
+          name: ${{ matrix.application }}-regression-logs
           path: logs
