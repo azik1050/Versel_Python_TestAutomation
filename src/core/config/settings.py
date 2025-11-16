@@ -13,8 +13,10 @@ class ApiConfig:
 
 class UiConfig:
     BASE_UI_URL = os.getenv('BASE_UI_URL')
-    BROWSER = os.getenv('BROWSER')
-    IMPLICIT_DRIVER_WAIT = int(os.getenv('IMPLICIT_DRIVER_WAIT'))
+    BROWSER = 'chrome'
+    IMPLICIT_DRIVER_WAIT = 10
+    # BROWSER = os.getenv('BROWSER')
+    # IMPLICIT_DRIVER_WAIT = int(os.getenv('IMPLICIT_DRIVER_WAIT')) or 10
 
 
 class TestConfig:
