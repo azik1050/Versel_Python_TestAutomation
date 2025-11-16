@@ -40,21 +40,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: install dependecies
+      - name: install dependencies
         run: pip install -r requirements.txt
 
       - name: run API tests
-        continue-on-fail: true
+        continue-on-error: true
         run: pytest src/test/api/${{ matrix.application }} -n auto -m regression --alluredir=allure-results
 
       - name: post allure results
         uses: actions/upload-artifact@v4
         with:
-          name: allure-regression-results
+          name: ${{ matrix.application }}-allure-regression-results
           path: allure-results
 
       - name: post application logs
         uses: actions/upload-artifact@v4
         with:
-          name: regression-logs
+          name: ${{ matrix.application }}-regression-logs
           path: logs

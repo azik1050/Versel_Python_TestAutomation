@@ -51,11 +51,11 @@ jobs:
       - name: post allure results
         uses: actions/upload-artifact@v4
         with:
-          name: allure-smoke-results
+          name: ${{ matrix.application }}-allure-smoke-results
           path: allure-results
 
       - name: post application logs
         uses: actions/upload-artifact@v4
         with:
-          name: smoke-logs
+          name: ${{ matrix.application }}-smoke-logs
           path: logs
